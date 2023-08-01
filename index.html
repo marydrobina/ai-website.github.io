@@ -3,194 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Home</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap" rel="stylesheet">
 
 
-  <link rel="stylesheet" href="styles/style-index-page.css">
-  <link rel="stylesheet" href="styles/modern_normalize.css">
+  <!-- <link rel="stylesheet" href="styles/style-index-page.css"> -->
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/nav.css">
+  <link rel="stylesheet" href="styles/default.css">
+  <link rel="stylesheet" href="styles/particles.css">
+  <link rel="stylesheet" href="styles/animations.css">
+
+  <script defer src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script defer src="scripts/particles.js"></script>
+  <script defer src="scripts/script.js"></script>
+
 </head>
 <body>
-  <header>
-    <h1 id="main-header">Latest news</h1>
+  <header id="main-navigation">
     <nav>
       <ul class="navigation" role="list">
-        <li class="navigation__element"><a href="#">Tech</a></li>
-        <li class="navigation__element"><a href="#">Politics</a></li>
-        <li class="navigation__element"><a href="#">Sports</a></li>
-        <li class="navigation__element"><a href="#">Arts</a></li>
-        <li class="navigation__element"><a href="#">Businesses</a></li>
+        <li class="navigation__element"><a href="index.html">Home</a></li>
+        <li class="navigation__element"><a href="news.html">AI News</a></li>
+        <li class="navigation__element"><a href="tools.html">AI Tools</a></li>
+        <li class="navigation__element"><a href="#">AI Jobs</a></li>
+        <li class="navigation__element"><a href="#">AI Conferences</a></li>
       </ul>
     </nav>
   </header>
-
+  
   <main>
-    <section class="divider">
+    <div class="all-circles-container"></div>
+    <section>
+      <div class="hero">
+        <div id="hero-img">
+            <img src="assets/hero2.jpg" alt="">
+        </div>
+        <div class="hero-text">
+          <h1>Welcome to the AI Ascendancy</h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="center divider">
       
-      <div class="news-collage">
-        
-        <div class="news-collage__small-column">
-          <div class="news-collage__small-column__news">
-            <div class="img-small">
-              <img class="img" src="assets/tech-news/vr-image.png" alt="News Picture">
-            </div>
-            <div>
-              <h3>Heading</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetrt orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
-            </div>
-          </div>
-          <div class="news-collage__small-column__highlighted-box">
-            <div class="news-collage__small-column__highlighted-box__heading"><h3>Heading</h3> <hr></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetrt orci ullamcorper at ultricies metus viverra. Pellentesque sit amet, consectetur adipiscing elit. Nulue</p>
-          </div>
+      <h1 class="title toAnim">Overview</h1>
+      
+      <div class="card divider toAnim">
+        <div class="card__img"> 
+          <img src="assets/tech-news/robot.png" alt="">
         </div>
-       
-        <div class="news-collage__big-column">
-          <div class="img-big">
-            <img class="img" src="assets/tech-news/robot.png" alt="News Picture">
+        <div class="card__description">
+          <div class="card__description__text">
+          <h1>Read Latest AI News</h1>
+          <ul role="list">
+            <li><strong>Comprehensive Coverage:</strong> We cover a wide range of AI-related topics, including machine learning, natural language processing, computer vision and more. </li>
+            <li><strong>Timely Updates:</strong> AI is constantly advancing, and our news tab ensures you're always in the know. We update the section frequently, bringing you the latest headlines and insights from the forefront of AI research and industry.</li>
+            <li><strong>Expertly Curated:</strong> Our team of AI experts hand-picks articles to ensure quality and relevance. </li>
+          </ol>
           </div>
-          <div class="news-collage__big-column__decription">
-            <h3>Heading</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetrt orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetrt orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
-          </div>
-        </div>
-        
-        <div class="news-collage__small-column">
-          <div class="news-collage__small-column__highlighted-box">
-            <div class="news-collage__small-column__highlighted-box__heading"><h3>Heading</h3> <hr></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetrt orci ullamcorper at ultricies metus viverra. Pellentesque sit amet, consectetur adipie</p>
-          </div>
-          <div class="news-collage__small-column__news">
-            <div class="img-small">
-              <img class="img" src="assets/tech-news/phone.jpg" alt="News Picture">
-            </div>
-            <div>
-              <h3>Heading</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetrt orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section  class="divider">
-      <h2>Heading</h2>
-      <div class="news-gallery divider">
-
-        <div class="news-gallery__news">
-          <div class="img-small">
-            <img class="img" src="assets/tech-news/rocket.jpg" alt="News Picture">
-          </div>
-          <div>
-            <h3>Heading</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetrt orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
-          </div>
-        </div>
-
-        <div class="news-gallery__news">
-          <div class="img-small">
-            <img class="img" src="assets/tech-news/internet.png" alt="News Picture">
-          </div>
-          <div>
-            <h3>Heading</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetrt orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
-          </div>
-        </div>
-
-        <div class="news-gallery__news">
-          <div class="img-small">
-            <img class="img" src="assets/tech-news/printing.jpg" alt="News Picture">
-          </div>
-          <div>
-            <h3>Heading</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetrt orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
-          </div>
-        </div>
-
-        <div class="news-gallery__news">
-          <div class="img-small">
-            <img class="img" src="assets/tech-news/crypto.jpg" alt="News Picture">
-          </div>
-          <div>
-            <h3>Heading</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetrt orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
-          </div>
-        </div>
-
-        
-      </div>
-    </section>
-
-    <section class="divider">
-      <div class="highlighted-section">
-        <h2>Heading</h2>
-        <div class="news-gallery divider">
-          <div class="news-gallery__news">
-            <div class="img-small">
-              <img class="img" src="assets/tech-news/room.png" alt="News Picture">
-            </div>
-            <div>
-              <h3>Heading</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetrt orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
-            </div>
-          </div>
-
-          <div class="news-gallery__news">
-            <div class="img-small">
-              <img class="img" src="assets/tech-news/car.jpg" alt="News Picture">
-            </div>
-            <div>
-              <h3>Heading</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetrt orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
-            </div>
-          </div>
-
-          <div class="news-gallery__news">
-            <div class="img-small">
-              <img class="img" src="assets/tech-news/drones.jpg" alt="News Picture">
-            </div>
-            <div>
-              <h3>Heading</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetrt orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
-            </div>
-          </div>
+          <a href="news.html" class="button-77">Read News</a>
         </div>
       </div>
-    </section>
 
-    <section class="divider">
-      <h2>Heading</h2>
-      <div class="news-collage divider">
-        <div class="news-collage__big-column">
-          <div class="img-big">
-            <img class="img" src="assets/tech-news/computer.png" alt="News Picture">
+      <div class="card divider toAnim">
+        <div class="card__description">
+          <div class="card__description__text">
+          <h1>Use AI Tools</h1>
+          <ul role="list">
+            <li><strong>Diversity of Tools:</strong> Our collection includes a diverse array of AI tools, each tailored for specific tasks and applications. </li>
+            <li><strong>User-Friendly Interface:</strong>  We prioritize tools with intuitive interfaces, ensuring that even those without extensive AI expertise can use them effectively. Whether you're a beginner or an AI pro, our tools make it easy to get started and achieve results.</li>
+            <li><strong>Support and Community:</strong> Many of the tools we present have active user communities and forums. Connect with like-minded individuals, seek help, and share your experiences to foster a collaborative learning environment.</li>
+          </ol>
           </div>
-          <div class="news-collage__big-column__decription">
-            <h3>Heading</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetrt orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetrt orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
-          </div>
+          <button class="button-77">Use AI Tools</button>
         </div>
-        <div class="big-highlighted-box">
-          <div>
-            <div class="news-collage__small-column__highlighted-box__heading"><h3>Heading</h3> <hr></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetrt orci ullamcorper at ultricies metus viverra. Pellentesque sit amet, consectetur adipiscing elit. Nulue</p>
+        <div class="card__img"> 
+          <img src="assets/tech-news/ai.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="card divider toAnim">
+        <div class="card__img"> 
+          <img src="assets/tech-news/computer.png" alt="">
+        </div>
+        <div class="card__description">
+          <div class="card__description__text">
+          <h1>Look for AI Jobs</h1>
+          <ul role="list">
+            <li><strong>Curated AI Job Listings:</strong> We meticulously curate job postings from various industries, including tech giants, startups, research institutions, and more. Each listing is handpicked to ensure relevance and quality, saving you time and effort in your job search. </li>
+            <li><strong>Diverse Positions:</strong> Whether you are an AI researcher, machine learning engineer, data scientist, computer vision specialist, NLP expert, or AI product manager, our job listings cover a wide range of roles within the AI domain.</li>
+            <li><strong>Stay Informed: </strong> Our AI Jobs Page is regularly updated to ensure you have access to the latest AI job openings as soon as they become available.</li>
+          </ol>
           </div>
-          <div >
-            <div class="news-collage__small-column__highlighted-box__heading"><h3>Heading</h3> <hr></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetrt orci ullamcorper at ultricies metus viverra. Pellentesque sit amet, consectetur adipiscing elit. Nulue</p>
+          <button class="button-77">Look for AI Jobs</button>
+        </div>
+      </div>
+
+      <div class="card divider toAnim">
+        <div class="card__description">
+          <div class="card__description__text">
+          <h1>Attend AI Conferences</h1>
+          <ul role="list">
+            <li><strong>Diverse Conference Selection: </strong>We feature a wide range of AI conferences from around the world. Whether you're interested in general AI topics, specialized areas like machine learning, computer vision, or ethical AI, you'll find relevant events on our page. </li>
+            <li><strong>In-Person and Virtual Events:</strong> Our page includes both in-person and virtual AI conferences, allowing you to choose the format that suits your preferences and current circumstances.</li>
+            <li><strong>Networking Opportunities:</strong> Expand your network, collaborate on projects, and exchange ideas that can shape your AI journey.</li>
+          </ol>
           </div>
-          <div >
-            <div class="news-collage__small-column__highlighted-box__heading"><h3>Heading</h3> <hr></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetrt orci ullamcorper at ultricies metus viverra. Pellentesque sit amet, consectetur adipiscing elit. Nulue</p>
-          </div>
-          <div >
-            <div class="news-collage__small-column__highlighted-box__heading"><h3>Heading</h3> <hr></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetrt orci ullamcorper at ultricies metus viverra. Pellentesque sit amet, consectetur adipiscing elit. Nulue</p>
-          </div>
+          <button class="button-77">Read News</button>
+        </div>
+        <div class="card__img"> 
+          <img src="assets/tech-news/internet.png" alt="">
         </div>
       </div>
     </section>
@@ -198,17 +124,16 @@
 
   <footer class="divider">
     <div class="footer">
-      <h3>Explore latest news!</h3>
+      <h3>Explore AI!</h3>
       <div class="footer__links">
-        <a href="#">Tech news</a>
-        <a href="#">Politics news</a>
-        <a href="#">Sports news</a>
-        <a href="#">Arts news</a>
-        <a href="#">Businesses news</a>
+        <a href="index.html">Home</a>
+        <a href="news.html">AI news</a>
+        <a href="tools.html">AI Tools</a>
+        <a href="#">AI Jobs</a>
+        <a href="#">AI conferences</a>
       </div>
       <p>&#169;Mariia Drobina, 2023</p>
     </div>
   </footer>
-
 </body>
 </html>

@@ -1,7 +1,8 @@
-const particles = new Particles;
+const particles = new Particles();;
 
 
 particles.createBubbles();
+
 
 $(window).on('scroll', () => {
   const $win = $(window);

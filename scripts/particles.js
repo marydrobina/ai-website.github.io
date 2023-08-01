@@ -1,6 +1,6 @@
 function Particles() {
   const bubbleLifeTime = 20;
-  const noOfBubbles = 250;
+  const noOfBubbles = 150;
   const container = $('.all-circles-container');
 
   this.createBubbles = function() {
@@ -22,7 +22,6 @@ function Particles() {
 
     const randomTop = `${Math.floor(Math.random() * height)}px`;
     const randomLeft = `${Math.floor(Math.random() * height)}px`;
-    console.log(window.innerHeight)
 
     circleContainer.css('top', randomTop);
     circleContainer.css('left', randomLeft);
