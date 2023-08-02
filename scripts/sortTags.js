@@ -1,53 +1,51 @@
 function SortTags(){
 
-  let toolsHidden = [];
-
   this.sortTags = function(){
-    $('.filter p').on('click', function()
+    $('.filter').on('click', function()
       { 
         filterTools($(this)[0].innerText)
       }
     )
-
   }
   
   function getListsOfTags() {
-    const $tools = $('.tool')
-    const $tags = $('.tool__description__tags')
-    const listsOfTags = [];
-    for (let i = 0; i < $tools.length; i++) {
-      const listOfTags = ($tags[i].innerText).split(/\r?\n/).filter((str) => (str !== '')&&(str !== 'Tags'));
-      listsOfTags.push(listOfTags);
+    const $tags = $('.tags')
+    const $toolsNames = $('.tool__description__text h3')
+    const tagsList = {};
+    for(let i = 0; i < $tags.length; i++){
+      const currentTool = $toolsNames[i].innerText;
+      tagsList[currentTool] = []
+      for (let tag of $tags[i].children) {
+        
+        tagsList[currentTool].push(tag.innerText)
+      };
     }
-    return listsOfTags;
+    return tagsList;
   }
 
   function filterTools(category){
+    resetToolsDisplay();
     const listsOfTags = getListsOfTags();
-    const $tools = $('.tool')
-    for (let i = 0; i < $tools.length; ++i) {
-      console.log($tools[i])
-      if (listsOfTags[i].includes(category)) {
-        $tools[i].style.display = 'inline'
-        $tools[i].style.opacity = '1';
+    const $toolsNames = $('.tool__description__text h3')
+    for (let i = 0; i < $toolsNames.length; ++i) {
+      const currentToolName = $toolsNames[i].innerText;
+      const $currentTool = $($toolsNames[i].parentElement.parentElement.parentElement);
+      if (listsOfTags[currentToolName].includes(category)) {
+        $currentTool.css('display','inline-block')
+        $currentTool.css('opacity', '1');
+        $($currentTool).addClass('fadeInBoottom')
+      } else if(category == 'All') {
+        resetToolsDisplay();
       } else {
-        $tools[i].style.display = 'none';
-        toolsHidden.push({tool: $tools[i], tags: listsOfTags[i]});
+        $currentTool.css('display','none')
       }
     }
-    const newToolsHidden = [];
-    for (const toolData of toolsHidden) {
-      if (toolData.tags.includes(category)) {
-        toolData.tool.style.display = 'inline'
-        toolData.tool.style.opacity = '1';
-      } else {
-        newToolsHidden.push(toolData);
-      }
-    }
-    toolsHidden = newToolsHidden;
   }
 
+  function resetToolsDisplay() {
+    const $tools = $('.tool');
+    $tools.css('display', 'inline');
+    $tools.css('opacity', '1');
+    $tools.removeClass('toAnim')
+  }
 }
-
-const sort = new SortTags();
-sort.sortTags();

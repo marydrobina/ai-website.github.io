@@ -1,9 +1,5 @@
 const particles = new Particles();;
-
-
 particles.createBubbles();
-
-
 $(window).on('scroll', () => {
   const $win = $(window);
   const windowHeight = $win.height();
@@ -22,3 +18,6 @@ $(window).on('scroll', () => {
     }
   });
 });
+
+const sort = new SortTags();
+sort.sortTags();
