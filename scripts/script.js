@@ -19,15 +19,17 @@ $(window).on('scroll', () => {
   });
 });
 
-console.log(($('.jobs-wrapper')))
-if ($('.jobs-wrapper')){
-  const filterJobs = new ToolsFilter('job');
-  filterJobs.filter();
-
-} else if ($('.tools-wrapper').length != 0){
-  const filterTools = new ToolsFilter('tool');
-  filterTools.filter();
-}
+$('.filter').on('click', function()
+      { 
+        if (this.parentElement.parentElement.id == 'tools-section'){
+          const filterTools = new ToolsFilter('tool');
+          filterTools.filter(this)
+        } else if (this.parentElement.parentElement.id == 'jobs-section'){
+            const filterJobs = new ToolsFilter('job');
+            filterJobs.filter(this)
+        }
+      }
+    )
 
 
 

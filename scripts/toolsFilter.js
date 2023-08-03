@@ -1,17 +1,12 @@
 function ToolsFilter(entity, path){
 
-  this.filter = function(){
-    $('.filter').on('click', function()
-      { 
-        filterTools($(this)[0].innerText)
-      }
-    )
+  this.filter = function(button){
+    filterTools($(button)[0].innerText)
   }
   
   function getListsOfTags() {
     const $tags = $('.tags');
     const $toolsNames = $(`.${entity}__description__text`).find('h3');
-    console.log(entity)
     const tagsList = {};
     for(let i = 0; i < $tags.length; i++){
       const currentTool = $toolsNames[i].innerText;
@@ -27,14 +22,20 @@ function ToolsFilter(entity, path){
   function filterTools(category){
     resetToolsDisplay();
     const listsOfTags = getListsOfTags();
-    const $toolsNames = $(`.${entity}__description__text`).find('h3');;
+    const $toolsNames = $(`.${entity}__description__text`).find('h3');
     for (let i = 0; i < $toolsNames.length; ++i) {
       const currentToolName = $toolsNames[i].innerText;
-      const $currentTool = $($toolsNames[i].parentElement.parentElement.parentElement);
+      let $currentTool;
+      if(entity == 'tool'){
+        $currentTool = $($toolsNames[i].parentElement.parentElement.parentElement);
+      } else if(entity == 'job'){
+        $currentTool = $($toolsNames[i].parentElement.parentElement.parentElement.parentElement)
+      }
+      console.log(currentToolName)
       if (listsOfTags[currentToolName].includes(category)) {
-        $currentTool.css('display','inline-block')
+        $currentTool.css('display','flex')
         $currentTool.css('opacity', '1');
-        $($currentTool).addClass('fadeInBoottom')
+        $currentTool.css('animation', 'none');
       } else if(category == 'All') {
         resetToolsDisplay();
       } else {
@@ -44,9 +45,8 @@ function ToolsFilter(entity, path){
   }
 
   function resetToolsDisplay() {
-    const $tools = $('.tool');
-    $tools.css('display', 'inline');
+    const $tools = $(`.${entity}`);
+    $tools.css('display', 'flex');
     $tools.css('opacity', '1');
-    $tools.removeClass('toAnim')
   }
 }

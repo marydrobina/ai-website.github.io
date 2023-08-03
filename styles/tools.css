@@ -82,6 +82,3 @@ main{
 .tags__tag:hover{
   background-color: var(--clr-accent-opacity-light);
 }
-.fadeInBoottom{
-  animation: fadeInBottom 1s ease-in-out;
-}
