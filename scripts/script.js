@@ -19,5 +19,17 @@ $(window).on('scroll', () => {
   });
 });
 
-const sort = new SortTags();
-sort.sortTags();
+console.log(($('.jobs-wrapper')))
+if ($('.jobs-wrapper')){
+  const filterJobs = new ToolsFilter('job');
+  filterJobs.filter();
+
+} else if ($('.tools-wrapper').length != 0){
+  const filterTools = new ToolsFilter('tool');
+  filterTools.filter();
+}
+
+
+
+
+

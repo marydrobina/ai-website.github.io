@@ -21,7 +21,7 @@ function Particles() {
                           html.clientHeight, html.scrollHeight, html.offsetHeight );
 
     const randomTop = `${Math.floor(Math.random() * height)}px`;
-    const randomLeft = `${Math.floor(Math.random() * height)}px`;
+    const randomLeft = `${Math.floor(Math.random() * window.innerWidth)}px`;
 
     circleContainer.css('top', randomTop);
     circleContainer.css('left', randomLeft);

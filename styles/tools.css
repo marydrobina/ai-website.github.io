@@ -11,35 +11,13 @@ main{
 }
 #main-navigation{
   position: relative;
-
-  position: relative;
   align-self: start;
 }
 #tools-section h1{
   text-align: center;
   animation: fadeInBottom 1s ease-in-out;
 }
-.filters-wrapper{
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  animation: fadeInBottom 1s ease-in-out;
-}
-.filter{
-  background-color: var(--clr-accent-opacity);
-  padding: 0.6rem 1.5rem;
-  border-radius: 5px;
-  backdrop-filter: blur(3px);
 
-  transition: all 0.2s ease-in-out;
-}
-.filter:hover{
-  cursor: pointer;
-  transform: scale(110%);
-}
-.filter p{
-  font-size: var(--buttons-font-size);
-}
 .tools-wrapper{
   display: flex;
   flex-wrap: wrap;

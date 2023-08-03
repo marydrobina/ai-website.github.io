@@ -1,6 +1,6 @@
-function SortTags(){
+function ToolsFilter(entity, path){
 
-  this.sortTags = function(){
+  this.filter = function(){
     $('.filter').on('click', function()
       { 
         filterTools($(this)[0].innerText)
@@ -9,8 +9,9 @@ function SortTags(){
   }
   
   function getListsOfTags() {
-    const $tags = $('.tags')
-    const $toolsNames = $('.tool__description__text h3')
+    const $tags = $('.tags');
+    const $toolsNames = $(`.${entity}__description__text`).find('h3');
+    console.log(entity)
     const tagsList = {};
     for(let i = 0; i < $tags.length; i++){
       const currentTool = $toolsNames[i].innerText;
@@ -26,7 +27,7 @@ function SortTags(){
   function filterTools(category){
     resetToolsDisplay();
     const listsOfTags = getListsOfTags();
-    const $toolsNames = $('.tool__description__text h3')
+    const $toolsNames = $(`.${entity}__description__text`).find('h3');;
     for (let i = 0; i < $toolsNames.length; ++i) {
       const currentToolName = $toolsNames[i].innerText;
       const $currentTool = $($toolsNames[i].parentElement.parentElement.parentElement);

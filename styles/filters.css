@@ -1,0 +1,21 @@
+.filters-wrapper{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  animation: fadeInBottom 1s ease-in-out;
+}
+.filter{
+  background-color: var(--clr-accent-opacity);
+  padding: 0.6rem 1.5rem;
+  border-radius: 5px;
+  backdrop-filter: blur(3px);
+
+  transition: all 0.2s ease-in-out;
+}
+.filter:hover{
+  cursor: pointer;
+  transform: scale(110%);
+}
+.filter p{
+  font-size: var(--buttons-font-size);
+}
