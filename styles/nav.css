@@ -1,28 +1,81 @@
 #main-navigation{
   position: absolute;
   z-index: 2;
-  left: 4%;
-
+  width: 100%;
+  padding-left: 4rem;
+  display: flex;
+  gap: 3rem;
   /* backdrop-filter: blur(5px); */
   animation-name: fadeInTop;
   animation-duration: 1.7s;
   animation-fill-mode: both;
 }
-
-.navigation{
-  display: flex;
-  gap: 3rem;
-  padding: 0;
+nav{
+  width: 100%;
 }
-
+header{
+  width: 100%;
+}
 .navigation__element a{
   color: var(--clr-light);
   font-weight: var(--font-weight-300);
+
   transition: all 0.2s ease-in-out;
 }
-
+.navigation .icon .hamburger-menu,
+.navigation .icon .cross-menu {
+  display: none;
+}
 .navigation__element a:hover{
   color: var(--clr-accent-opacity-light)
+}
+@media screen and (max-width: 768px) {
+  .navigation li{
+    display: none;
+  }
+  .navigation .icon {
+    width: clamp(50px, 15%, 70px);
+    float: right;
+  }
+  .navigation .icon .hamburger-menu{
+    display: block;
+    margin-left: 1rem;
+  }
+
+  #main-navigation{
+    padding-left: 0;
+  }
+
+  .navigation.responsive {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    background-color: var(--clr-grey);
+    backdrop-filter: blur(3px);
+    padding: 1rem 1rem 0 1rem;
+  }
+  .navigation.responsive .hamburger-menu {
+    display: none;
+  }
+  .navigation.responsive .cross-menu{
+    width: clamp(50px, 15%, 70px);
+    display: inline;
+    position: absolute;
+    right: 4%;
+    top: 1%;
+  }
+  .navigation.responsive li {
+    display: block;
+    text-align: left;
+  }
+
+  .footer__links{
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer{
+    justify-content: center;
+  }
 }
 /* ---------------------- Footer ------------------------*/
 footer{
@@ -48,6 +101,7 @@ footer{
 }
 .footer__links a{
   color: var(--clr-light);
+  font-size: clamp(0.9rem, 1vw, 1rem);
   font-weight: var(--font-weight-200);
   transition: all 0.2s ease-in-out;
 }

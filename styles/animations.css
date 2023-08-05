@@ -7,7 +7,6 @@
     opacity: 1 
   }
 }
-
 @keyframes imageFadeIn{
   from {
     opacity: 0%;
@@ -30,9 +29,9 @@
   transition: opacity 1s ease 0s;
 }
 
-.anim {
+.toAnim.anim {
   opacity: 1;
   animation-name: fadeInBottom;
-  animation-duration: 1.7s;
+  animation-duration: 1.4s;
   animation-fill-mode: both;
 }

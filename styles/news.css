@@ -5,7 +5,7 @@ body{
   align-items: center;
 }
 main{
-  width: 1440px;
+  width: 90%;
   max-width: 1440px;
   position: relative;
   z-index: 3;
@@ -204,4 +204,17 @@ main{
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  /* Tablets and larger screens */
+  main {
+    width: 90%;
+  }
+
+  .news-collage{
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+  }
 }

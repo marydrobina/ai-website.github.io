@@ -4,7 +4,7 @@ body{
   align-items: center;
 }
 main{
-  width: 1440px;
+  width: 100%;
   max-width: 1440px;
   position: relative;
   z-index: 3;

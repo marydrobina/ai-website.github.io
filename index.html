@@ -11,11 +11,11 @@
 
 
   <!-- <link rel="stylesheet" href="styles/style-index-page.css"> -->
-  <link rel="stylesheet" href="styles/index.css">
   <link rel="stylesheet" href="styles/nav.css">
   <link rel="stylesheet" href="styles/default.css">
   <link rel="stylesheet" href="styles/particles.css">
   <link rel="stylesheet" href="styles/animations.css">
+  <link rel="stylesheet" href="styles/index.css">
 
   <script defer src="node_modules/jquery/dist/jquery.min.js"></script>
   <script defer src="scripts/particles.js"></script>
@@ -23,14 +23,18 @@
 
 </head>
 <body>
-  <header id="main-navigation">
+  <header>
     <nav>
-      <ul class="navigation" role="list">
+      <ul id="main-navigation" class="navigation" role="list">
         <li class="navigation__element"><a href="index.html">Home</a></li>
         <li class="navigation__element"><a href="news.html">AI News</a></li>
         <li class="navigation__element"><a href="tools.html">AI Tools</a></li>
         <li class="navigation__element"><a href="jobs.html">AI Jobs</a></li>
-        <li class="navigation__element"><a href="#">AI Conferences</a></li>
+        <li class="navigation__element"><a href="conferences.html">AI Conferences</a></li>
+        <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+          <img class="hamburger-menu" src="assets/icons/hamburger.png" alt="">
+          <img class="cross-menu" src="assets/icons/cross.png" alt="">
+        </a>
       </ul>
     </nav>
   </header>
@@ -113,7 +117,7 @@
             <li><strong>Networking Opportunities:</strong> Expand your network, collaborate on projects, and exchange ideas that can shape your AI journey.</li>
           </ol>
           </div>
-          <button class="button-77">Read News</button>
+          <a href="conferences.html" class="button-77">Read News</a>
         </div>
         <div class="card__img"> 
           <img src="assets/tech-news/internet.png" alt="">
@@ -130,7 +134,7 @@
         <a href="news.html">AI news</a>
         <a href="tools.html">AI Tools</a>
         <a href="jobs.html">AI Jobs</a>
-        <a href="#">AI conferences</a>
+        <a href="conferences.html">AI conferences</a>
       </div>
       <p>&#169;Mariia Drobina, 2023</p>
     </div>
