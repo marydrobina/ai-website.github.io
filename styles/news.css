@@ -71,6 +71,7 @@ main{
   flex-direction: column;
   gap: var(--description-gap);
   background-color: var(--clr-grey-opacity);
+  -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
   padding: 1rem 1rem;
   border-radius: 5px;
@@ -90,6 +91,7 @@ main{
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+  -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
   justify-content: center;
 }
@@ -113,7 +115,7 @@ main{
   flex-direction: column;
   gap: var(--description-gap);
   flex: 2;
-
+  -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
 
 
@@ -173,12 +175,14 @@ main{
   border-radius: 4px;
   padding: 3% 4% 2% 4%;
   position: relative;
+  -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
 }
 
 .big-highlighted-box{
   background-color: var(--clr-accent-opacity);
   color: var(--clr-light);
+  -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
   flex: 1;
   display: flex;
@@ -194,6 +198,7 @@ main{
   gap: var(--description-gap);
   flex: 2;
   background-color: var(--clr-grey-opacity);
+  -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
   padding: 1rem 1rem;
   border-radius: 5px;

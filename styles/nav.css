@@ -92,6 +92,7 @@ footer{
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 0;
+  -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
 }
 .footer__links{

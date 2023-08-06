@@ -9,6 +9,7 @@
   background-color: var(--clr-accent-opacity);
   padding: 0.6rem 1.5rem;
   border-radius: 5px;
+  -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
 
   transition: all 0.2s ease-in-out;

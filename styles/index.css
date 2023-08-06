@@ -49,14 +49,14 @@
   color: var(--clr-light);
   gap: 3rem;
   justify-content: center;
-  backdrop-filter: blur(10px);
   border: 1px solid var(--clr-dark);
   border-radius: 10px;
   align-items: center;
   background-color: var(--clr-grey-opacity);
   padding: 1.5rem 2rem;
   z-index: 2;
-  -webkit-backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
   transition: all 0.3s ease-in-out;
 
 }
