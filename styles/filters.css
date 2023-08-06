@@ -3,6 +3,7 @@
   gap: 1rem;
   flex-wrap: wrap;
   animation: fadeInBottom 1s ease-in-out;
+  justify-content: center
 }
 .filter{
   background-color: var(--clr-accent-opacity);
@@ -17,5 +18,10 @@
   transform: scale(110%);
 }
 .filter p{
-  font-size: var(--buttons-font-size);
+  font-size: clamp(1rem, 1vw, var(--buttons-font-size));
+}
+@media screen and (max-width: 768px){
+  .filter{
+    padding: 1% 2%;
+  }
 }

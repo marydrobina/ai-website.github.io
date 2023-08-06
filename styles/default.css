@@ -97,6 +97,6 @@ text-decoration: none;
 }
 h1{
   color: var(--clr-light);
-  font-size: var(--main-heading-font-size);
+  font-size: clamp(2rem, 10vw,var(--main-heading-font-size));
   font-weight: var(--font-weight-300);
 }
