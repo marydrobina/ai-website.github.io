@@ -22,8 +22,8 @@ class ToolsFilter {
   }
   #filterTools(category) {
     this.#resetToolsDisplay();
-    if (category == 'All') {
-      this.#resetToolsDisplay();
+    if (category.toLowerCase().trim() == 'all') {
+      console.log(category)
       return
     }
     const listsOfTags = this.#getListsOfTags();
