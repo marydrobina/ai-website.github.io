@@ -3,11 +3,7 @@ particles.createBubbles();
 
 function openMenu() {
   let nav = document.querySelector("#main-navigation");
-  if (nav.className === "navigation") {
-    nav.className += " responsive";
-  } else {
-    nav.className = "navigation";
-  }
+  nav.classList.toggle('responsive')
 }
 $(window).on('scroll', () => {
   const $win = $(window);

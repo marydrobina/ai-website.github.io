@@ -23,6 +23,7 @@ main{
   font-size: clamp(2rem, 5vw, var(--main-heading-font-size));
   text-align: center;
   animation: fadeInBottom 1s ease-in-out;
+  margin-top: 4rem;
 }
 .card{
   display: flex;

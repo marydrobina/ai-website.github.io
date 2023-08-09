@@ -27,26 +27,31 @@
 </head>
 <body>
   <header>
-    <nav>
+    <nav aria-label="Main Navigation">
+      <div>
       <ul id="main-navigation" class="navigation" role="list">
-        <li class="navigation__element"><a href="index.html">Home</a></li>
+        <li class="navigation__element"><a href="index.html" aria-current="page">Home</a></li>
         <li class="navigation__element"><a href="news.html">AI News</a></li>
         <li class="navigation__element"><a href="tools.html">AI Tools</a></li>
         <li class="navigation__element"><a href="jobs.html">AI Jobs</a></li>
-        <li class="navigation__element"><a href="conferences.htmls">AI Conferences</a></li>
+        <li class="navigation__element"><a href="conferences.html">AI Conferences</a></li>        
         <a href="javascript:void(0);" class="icon" onclick="openMenu()">
-          <img class="hamburger-menu" src="assets/icons/hamburger.png" alt="">
-          <img class="cross-menu" src="assets/icons/cross.png" alt="">
+          <img class="hamburger-menu" src="assets/icons/hamburger.png" alt="Hamburger Menu">
+          <img class="cross-menu" src="assets/icons/cross.png" alt="Close Menu">
         </a>
       </ul>
+    </div>
+    <div class="accessibility">
+      <img src="assets/icons/accessibility-64.png" alt="Accessibility Options" aria-label="Accessibility Options">
+    </div>
     </nav>
   </header>
   <div class="all-circles-container"></div>
   <main>
-    <section id="tools-section">
+    <section id="tools-section" aria-labelledby="tools-section">
       <h1 class="main-header">AI Tools</h1>
       
-      <div class="filters-wrapper">
+      <div class="filters-wrapper" aria-label="Filters">
         <div class="filter">
           <p>All</p>
         </div>
@@ -94,7 +99,7 @@
         </div>
       </div>
 
-      <div class="tools-wrapper divider-2">
+      <div class="tools-wrapper divider-2" aria-label="AI Tools">
         <div class="tool">
           <div class="tool__image">
             <img src="assets/tools/kreado-ai.webp" alt="">
@@ -574,11 +579,11 @@
     <div class="footer">
       <h3>Explore AI!</h3>
       <div class="footer__links">
-        <a href="index.html">Home</a>
-        <a href="news.html">AI news</a>
-        <a href="tools.html">AI Tools</a>
-        <a href="jobs.html">AI Jobs</a>
-        <a href="conferences.html">AI conferences</a>
+        <a href="index.html" aria-label="Go to Home">Home</a>
+        <a href="news.html" aria-label="Read AI News">AI news</a>
+        <a href="tools.html" aria-label="Explore AI Tools">AI Tools</a>
+        <a href="jobs.html" aria-label="Find AI Jobs">AI Jobs</a>
+        <a href="conferences.html" aria-label="Discover AI Conferences">AI conferences</a>
       </div>
       <p>&#169;Mariia Drobina, 2023</p>
     </div>

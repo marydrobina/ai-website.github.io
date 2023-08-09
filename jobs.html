@@ -27,27 +27,32 @@
 </head>
 <body>
   <header>
-    <nav>
+    <nav aria-label="Main Navigation">
+      <div>
       <ul id="main-navigation" class="navigation" role="list">
-        <li class="navigation__element"><a href="index.html">Home</a></li>
+        <li class="navigation__element"><a href="index.html" aria-current="page">Home</a></li>
         <li class="navigation__element"><a href="news.html">AI News</a></li>
         <li class="navigation__element"><a href="tools.html">AI Tools</a></li>
         <li class="navigation__element"><a href="jobs.html">AI Jobs</a></li>
-        <li class="navigation__element"><a href="conferences.html">AI Conferences</a></li>
+        <li class="navigation__element"><a href="conferences.html">AI Conferences</a></li>        
         <a href="javascript:void(0);" class="icon" onclick="openMenu()">
-          <img class="hamburger-menu" src="assets/icons/hamburger.png" alt="">
-          <img class="cross-menu" src="assets/icons/cross.png" alt="">
+          <img class="hamburger-menu" src="assets/icons/hamburger.png" alt="Hamburger Menu">
+          <img class="cross-menu" src="assets/icons/cross.png" alt="Close Menu">
         </a>
       </ul>
+    </div>
+    <div class="accessibility">
+      <img src="assets/icons/accessibility-64.png" alt="Accessibility Options" aria-label="Accessibility Options">
+    </div>
     </nav>
   </header>
   <div class="all-circles-container"></div>
 
   <main>
-    <section id="jobs-section">
+    <section id="jobs-section" aria-labelledby="jobs-section">
       <h1 class="main-header">AI Jobs</h1>
       
-      <div class="filters-wrapper">
+      <div class="filters-wrapper" aria-label="Job Filters">
         <div class="filter">
           <p>All</p>
         </div>
@@ -87,12 +92,12 @@
       </div>
     </section>
 
-    <section>
+    <section aria-label="Job Listings">
       <div class="jobs-wrapper divider-2">
         <div class="job">
           <div class="job__image">
-            <img src="assets/ai-jobs/unleashing.ai.jpg" alt="">
-          </div>
+            <img src="assets/ai-jobs/unleashing.ai.jpg" alt="Unleashing.Ai Logo">
+          </div>          
           <div class="job__description">
             <div class="job__description__text">
               <div>
@@ -127,7 +132,7 @@
 
         <div class="job">
           <div class="job__image">
-            <img src="assets/ai-jobs/brainlab.jpg" alt="">
+            <img src="assets/ai-jobs/brainlab.jpg" alt="Brainlab Logo">
           </div>
           <div class="job__description">
             <div class="job__description__text">
@@ -159,7 +164,7 @@
 
         <div class="job">
           <div class="job__image">
-            <img src="assets/ai-jobs/sopra.jpg" alt="">
+            <img src="assets/ai-jobs/sopra.jpg" alt="Sopra Steria Logo">
           </div>
           <div class="job__description">
             <div class="job__description__text">
@@ -194,7 +199,7 @@
 
         <div class="job">
           <div class="job__image">
-            <img src="assets/ai-jobs/airbnb.jpg" alt="">
+            <img src="assets/ai-jobs/airbnb.jpg" alt="Airbnb Logo">
           </div>
           <div class="job__description">
             <div class="job__description__text">
@@ -226,7 +231,7 @@
 
         <div class="job">
           <div class="job__image">
-            <img src="assets/ai-jobs/Checkout.com.jpg" alt="">
+            <img src="assets/ai-jobs/Checkout.com.jpg" alt="Checkout.com Logo">
           </div>
           <div class="job__description">
             <div class="job__description__text">
@@ -258,7 +263,7 @@
 
         <div class="job">
           <div class="job__image">
-            <img src="assets/ai-jobs/anyscale.jpg" alt="">
+            <img src="assets/ai-jobs/anyscale.jpg" alt="Anyscale Logo">
           </div>
           <div class="job__description">
             <div class="job__description__text">
@@ -290,7 +295,7 @@
 
         <div class="job">
           <div class="job__image">
-            <img src="assets/ai-jobs/tempus.jpg" alt="">
+            <img src="assets/ai-jobs/tempus.jpg" alt="Tempus Logo">
           </div>
           <div class="job__description">
             <div class="job__description__text">
@@ -322,7 +327,7 @@
 
         <div class="job">
           <div class="job__image">
-            <img src="assets/ai-jobs/helloheart.jpg" alt="">
+            <img src="assets/ai-jobs/helloheart.jpg" alt="Hello Heart Logo">
           </div>
           <div class="job__description">
             <div class="job__description__text">
@@ -354,7 +359,7 @@
 
         <div class="job">
           <div class="job__image">
-            <img src="assets/ai-jobs/avery.jpg" alt="">
+            <img src="assets/ai-jobs/avery.jpg" alt="Avery Dennison Logo">
           </div>
           <div class="job__description">
             <div class="job__description__text">
@@ -386,7 +391,7 @@
 
         <div class="job">
           <div class="job__image">
-            <img src="assets/ai-jobs/sixt.jpg" alt="">
+            <img src="assets/ai-jobs/sixt.jpg" alt="SIXT Logo">
           </div>
           <div class="job__description">
             <div class="job__description__text">
@@ -418,7 +423,7 @@
 
         <div class="job">
           <div class="job__image">
-            <img src="assets/ai-jobs/coupang.jpg" alt="">
+            <img src="assets/ai-jobs/coupang.jpg" alt="Coupang Logo">
           </div>
           <div class="job__description">
             <div class="job__description__text">
@@ -450,7 +455,7 @@
       
         <div class="job">
           <div class="job__image">
-            <img src="assets/ai-jobs/clover.jpg" alt="">
+            <img src="assets/ai-jobs/clover.jpg" alt="Clover Health Logo">
           </div>
           <div class="job__description">
             <div class="job__description__text">
@@ -482,7 +487,7 @@
 
         <div class="job">
           <div class="job__image">
-            <img src="assets/ai-jobs/celonis.jpg" alt="">
+            <img src="assets/ai-jobs/celonis.jpg" alt="Celonis Logo">
           </div>
           <div class="job__description">
             <div class="job__description__text">
@@ -514,7 +519,7 @@
 
         <div class="job">
           <div class="job__image">
-            <img src="assets/ai-jobs/devotean.jpg" alt="">
+            <img src="assets/ai-jobs/devotean.jpg" alt="Devoteam Logo">
           </div>
           <div class="job__description">
             <div class="job__description__text">
@@ -544,8 +549,6 @@
           </div>
         </div>
         
-      
-      
       </div>
       </section>
     </div>
@@ -555,11 +558,11 @@
     <div class="footer">
       <h3>Explore AI World!</h3>
       <div class="footer__links">
-        <a href="index.html">Home</a>
-        <a href="news.html">AI News</a>
-        <a href="tools.html">AI Tools</a>
-        <a href="jobs.html">AI Jobs</a>
-        <a href="conferences.html">AI COnferences</a>
+        <a href="index.html" aria-label="Go to Home">Home</a>
+        <a href="news.html" aria-label="Read AI News">AI news</a>
+        <a href="tools.html" aria-label="Explore AI Tools">AI Tools</a>
+        <a href="jobs.html" aria-label="Find AI Jobs">AI Jobs</a>
+        <a href="conferences.html" aria-label="Discover AI Conferences">AI conferences</a>
       </div>
       <p>&#169;Mariia Drobina, 2023</p>
     </div>

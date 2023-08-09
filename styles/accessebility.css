@@ -1,0 +1,36 @@
+.p-s-text{
+  font-size: var(--paragraph-font-size);
+}
+.p-m-text{
+  font-size: calc(var(--paragraph-font-size) + 0.25rem);
+}
+.p-l-text{
+  font-size: calc(var(--paragraph-font-size) + 0.5rem);
+}
+.h1-s-text{
+  font-size: var(--main-heading-font-size);
+}
+.h1-m-text{
+  font-size: calc(var(--main-heading-font-size) + 0.25rem);
+}
+.h1-l-text{
+  font-size: calc(var(--main-heading-font-size) + 0.5rem);
+}
+.h2-s-text{
+  font-size: var(--heading-font-size);
+}
+.h2-m-text{
+  font-size: calc(var(--heading-font-size) + 0.25rem);
+}
+.h2-l-text{
+  font-size: calc(var(--heading-font-size) + 0.5rem);
+}
+.h3-s-text{
+  font-size: var(--small-heading-font-size);
+}
+.h3-m-text{
+  font-size: calc(var(--small-heading-font-size) + 0.25rem);
+}
+.h3-l-text{
+  font-size: calc(var(--small-heading-font-size) + 0.5rem);
+}

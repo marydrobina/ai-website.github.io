@@ -10,8 +10,23 @@
   animation-duration: 1.7s;
   animation-fill-mode: both;
 }
+.accessibility{
+  z-index: 1;
+  margin-right: 4rem;
+  animation-name: fadeInTop;
+  animation-duration: 1.7s;
+  animation-fill-mode: both;
+}
+.accessibility img{
+  width: 50px;
+  height: 100%;
+}
 nav{
+  padding-top: 0.3rem;
+  position: absolute;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 header{
   width: 100%;

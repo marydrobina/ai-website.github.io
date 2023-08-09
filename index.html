@@ -11,34 +11,41 @@
 
 
   <!-- <link rel="stylesheet" href="styles/style-index-page.css"> -->
-  <link rel="stylesheet" href="styles/nav.css">
   <link rel="stylesheet" href="styles/default.css">
   <link rel="stylesheet" href="styles/particles.css">
   <link rel="stylesheet" href="styles/animations.css">
+  <link rel="stylesheet" href="styles/nav.css">
   <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/accessebility.css">
 
   <script defer
   src="https://code.jquery.com/jquery-3.7.0.min.js"
   integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
   crossorigin="anonymous" type="text/javascript"></script>
   <script defer src="scripts/particles.js" type="text/javascript"></script>
+  <script defer src="scripts/accessebility.js"></script>
   <script defer src="scripts/script.js" type="text/javascript"></script>
 
 </head>
 <body>
   <header>
-    <nav>
+    <nav aria-label="Main Navigation">
+      <div>
       <ul id="main-navigation" class="navigation" role="list">
-        <li class="navigation__element"><a href="index.html">Home</a></li>
+        <li class="navigation__element"><a href="index.html" aria-current="page">Home</a></li>
         <li class="navigation__element"><a href="news.html">AI News</a></li>
         <li class="navigation__element"><a href="tools.html">AI Tools</a></li>
         <li class="navigation__element"><a href="jobs.html">AI Jobs</a></li>
-        <li class="navigation__element"><a href="conferences.html">AI Conferences</a></li>
+        <li class="navigation__element"><a href="conferences.html">AI Conferences</a></li>        
         <a href="javascript:void(0);" class="icon" onclick="openMenu()">
-          <img class="hamburger-menu" src="assets/icons/hamburger.png" alt="">
-          <img class="cross-menu" src="assets/icons/cross.png" alt="">
+          <img class="hamburger-menu" src="assets/icons/hamburger.png" alt="Hamburger Menu">
+          <img class="cross-menu" src="assets/icons/cross.png" alt="Close Menu">
         </a>
       </ul>
+    </div>
+    <div class="accessibility">
+      <img src="assets/icons/accessibility-64.png" alt="Accessibility Options" aria-label="Accessibility Options">
+    </div>
     </nav>
   </header>
   
@@ -47,7 +54,7 @@
     <section>
       <div class="hero">
         <div id="hero-img">
-            <img src="assets/hero2.jpg" alt="">
+            <img src="assets/hero2.jpg" alt="AI Ascendancy Hero Image">
         </div>
         <div class="hero-text">
           <h1>Welcome to the AI Ascendancy</h1>
@@ -61,7 +68,7 @@
       
       <div class="card divider toAnim">
         <div class="card__img"> 
-          <img src="assets/tech-news/robot.png" alt="">
+          <img src="assets/tech-news/robot.png" alt="Robot Illustration">
         </div>
         <div class="card__description">
           <div class="card__description__text">
@@ -70,7 +77,7 @@
             <li><strong>Comprehensive Coverage:</strong> We cover a wide range of AI-related topics, including machine learning, natural language processing, computer vision and more. </li>
             <li><strong>Timely Updates:</strong> AI is constantly advancing, and our news tab ensures you're always in the know. We update the section frequently, bringing you the latest headlines and insights from the forefront of AI research and industry.</li>
             <li><strong>Expertly Curated:</strong> Our team of AI experts hand-picks articles to ensure quality and relevance. </li>
-          </ol>
+          </ul>
           </div>
           <a href="news.html" class="btn">Read News</a>
         </div>
@@ -84,18 +91,18 @@
             <li><strong>Diversity of Tools:</strong> Our collection includes a diverse array of AI tools, each tailored for specific tasks and applications. </li>
             <li><strong>User-Friendly Interface:</strong>  We prioritize tools with intuitive interfaces, ensuring that even those without extensive AI expertise can use them effectively. Whether you're a beginner or an AI pro, our tools make it easy to get started and achieve results.</li>
             <li><strong>Support and Community:</strong> Many of the tools we present have active user communities and forums. Connect with like-minded individuals, seek help, and share your experiences to foster a collaborative learning environment.</li>
-          </ol>
+          </ul>
           </div>
           <a href="tools.html" class="btn">Use AI Tools</a>
         </div>
         <div class="card__img"> 
-          <img src="assets/tech-news/ai.jpg" alt="">
+          <img src="assets/tech-news/ai.jpg" alt="AI Illustration">
         </div>
       </div>
 
       <div class="card divider toAnim">
         <div class="card__img"> 
-          <img src="assets/tech-news/computer.png" alt="">
+          <img src="assets/tech-news/computer.png" alt="Computer Illustration">
         </div>
         <div class="card__description">
           <div class="card__description__text">
@@ -104,7 +111,7 @@
             <li><strong>Curated AI Job Listings:</strong> We meticulously curate job postings from various industries, including tech giants, startups, research institutions, and more. Each listing is handpicked to ensure relevance and quality, saving you time and effort in your job search. </li>
             <li><strong>Diverse Positions:</strong> Whether you are an AI researcher, machine learning engineer, data scientist, computer vision specialist, NLP expert, or AI product manager, our job listings cover a wide range of roles within the AI domain.</li>
             <li><strong>Stay Informed: </strong> Our AI Jobs Page is regularly updated to ensure you have access to the latest AI job openings as soon as they become available.</li>
-          </ol>
+          </ul>
           </div>
           <a href="jobs.html" class="btn">Look for AI Jobs</a>
         </div>
@@ -118,12 +125,12 @@
             <li><strong>Diverse Conference Selection: </strong>We feature a wide range of AI conferences from around the world. Whether you're interested in general AI topics, specialized areas like machine learning, computer vision, or ethical AI, you'll find relevant events on our page. </li>
             <li><strong>In-Person and Virtual Events:</strong> Our page includes both in-person and virtual AI conferences, allowing you to choose the format that suits your preferences and current circumstances.</li>
             <li><strong>Networking Opportunities:</strong> Expand your network, collaborate on projects, and exchange ideas that can shape your AI journey.</li>
-          </ol>
+          </ul>
           </div>
-          <a href="conferences.html" class="btn">Read News</a>
+          <a href="conferences.html" class="btn">Attend AI Conferences</a>
         </div>
         <div class="card__img"> 
-          <img src="assets/tech-news/internet.png" alt="">
+          <img src="assets/tech-news/internet.png" alt="Internet Illustration">
         </div>
       </div>
     </section>
@@ -131,13 +138,13 @@
 
   <footer class="divider">
     <div class="footer">
-      <h3>Explore AI!</h3>
+      <h3 id="footer-heading" class="footer__heading">Explore AI!</h3>
       <div class="footer__links">
-        <a href="index.html">Home</a>
-        <a href="news.html">AI news</a>
-        <a href="tools.html">AI Tools</a>
-        <a href="jobs.html">AI Jobs</a>
-        <a href="conferences.html">AI conferences</a>
+        <a href="index.html" aria-label="Go to Home">Home</a>
+        <a href="news.html" aria-label="Read AI News">AI news</a>
+        <a href="tools.html" aria-label="Explore AI Tools">AI Tools</a>
+        <a href="jobs.html" aria-label="Find AI Jobs">AI Jobs</a>
+        <a href="conferences.html" aria-label="Discover AI Conferences">AI conferences</a>
       </div>
       <p>&#169;Mariia Drobina, 2023</p>
     </div>

@@ -9,48 +9,47 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap" rel="stylesheet">
 
-
-  <!-- <link rel="stylesheet" href="styles/style-index-page.css"> -->
   <link rel="stylesheet" href="styles/nav.css">
   <link rel="stylesheet" href="styles/default.css">
   <link rel="stylesheet" href="styles/particles.css">
   <link rel="stylesheet" href="styles/animations.css">
   <link rel="stylesheet" href="styles/conferences.css">
 
-  <script defer
-  src="https://code.jquery.com/jquery-3.7.0.min.js"
-  integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
-  crossorigin="anonymous" type="text/javascript"></script>
+  <script defer src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous" type="text/javascript"></script>
   <script defer src="scripts/particles.js" type="text/javascript"></script>
   <script defer src="scripts/script.js" type="text/javascript"></script>
 
 </head>
 <body>
   <header>
-    <nav>
+    <nav aria-label="Main Navigation">
+      <div>
       <ul id="main-navigation" class="navigation" role="list">
-        <li class="navigation__element"><a href="index.html">Home</a></li>
+        <li class="navigation__element"><a href="index.html" aria-current="page">Home</a></li>
         <li class="navigation__element"><a href="news.html">AI News</a></li>
         <li class="navigation__element"><a href="tools.html">AI Tools</a></li>
         <li class="navigation__element"><a href="jobs.html">AI Jobs</a></li>
-        <li class="navigation__element"><a href="conferences.html">AI Conferences</a></li>
+        <li class="navigation__element"><a href="conferences.html">AI Conferences</a></li>        
         <a href="javascript:void(0);" class="icon" onclick="openMenu()">
-          <img class="hamburger-menu" src="assets/icons/hamburger.png" alt="">
-          <img class="cross-menu" src="assets/icons/cross.png" alt="">
+          <img class="hamburger-menu" src="assets/icons/hamburger.png" alt="Hamburger Menu">
+          <img class="cross-menu" src="assets/icons/cross.png" alt="Close Menu">
         </a>
-
       </ul>
+    </div>
+    <div class="accessibility">
+      <img src="assets/icons/accessibility-64.png" alt="Accessibility Options" aria-label="Accessibility Options">
+    </div>
     </nav>
   </header>
   <div class="all-circles-container"></div>
 
   <main>
     <h1 class="main-header">AI Conferences 2023</h1>
-    <section id="conferences-section">
+    <section id="conferences-section" aria-labelledby="conferences-section">
      
       <div class="card divider">
         <div class="card__img"> 
-          <img src="assets/conferences/waicf.png" alt="">
+          <img src="assets/conferences/waicf.png" alt="World AI Cannes Festival 2023">
         </div>
         <div class="card__description">
           <div class="card__description__text">
@@ -67,7 +66,7 @@
 
       <div class="card divider">
         <div class="card__img"> 
-          <img src="assets/conferences/nvidia.png" alt="">
+          <img src="assets/conferences/nvidia.png" alt="Nvidia GTC">
         </div>
         <div class="card__description">
           <div class="card__description__text">
@@ -82,9 +81,9 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card divider">
         <div class="card__img"> 
-          <img src="assets/conferences/ml.jpg" alt="">
+          <img src="assets/conferences/ml.jpg" alt="MLConf | The Machine Learning Conference">
         </div>
         <div class="card__description">
           <div class="card__description__text">
@@ -99,9 +98,9 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card divider">
         <div class="card__img"> 
-          <img src="assets/conferences/world-data.png" alt="">
+          <img src="assets/conferences/world-data.png" alt="World Data Summit">
         </div>
         <div class="card__description">
           <div class="card__description__text">
@@ -116,9 +115,9 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card divider">
         <div class="card__img"> 
-          <img src="assets/conferences/world-summit.jpg" alt="">
+          <img src="assets/conferences/world-summit.jpg" alt="World Summit AI Americas">
         </div>
         <div class="card__description">
           <div class="card__description__text">
@@ -133,9 +132,9 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card divider">
         <div class="card__img"> 
-          <img src="assets/conferences/cvpr.png" alt="">
+          <img src="assets/conferences/cvpr.png" alt="CVPR | Computer Vision and Pattern Recognition">
         </div>
         <div class="card__description">
           <div class="card__description__text">
@@ -150,9 +149,9 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card divider">
         <div class="card__img"> 
-          <img src="assets/conferences/bigdata.png" alt="">
+          <img src="assets/conferences/bigdata.png" alt="AI & Big Data Expo">
         </div>
         <div class="card__description">
           <div class="card__description__text">
@@ -169,7 +168,7 @@
 
       <div class="card">
         <div class="card__img"> 
-          <img src="assets/conferences/neural.png" alt="">
+          <img src="assets/conferences/neural.png" alt="NeurIPS 2023">
         </div>
         <div class="card__description">
           <div class="card__description__text">
@@ -178,12 +177,12 @@
               <h4>Location to be defined | Dates to be published; probably in December 2023</h4>
             </div>
             <div>
-              <p>The conference was founded in 1987 and is now a multi-track interdisciplinary annual meeting that includes invited talks, demonstrations, symposia, and oral and poster presentations of refereed papers. Along with the conference is a professional exposition focusing on machine learning in practice, a series of tutorials, and topical workshops that provide a less formal setting for the exchange of ideas.
-              </p>
+              <p>The conference was founded in 1987 and is now a multi-track interdisciplinary annual meeting that includes invited talks, demonstrations, symposia, and oral and poster presentations of refereed papers. Along with the conference is a professional exposition focusing on machine learning in practice, a series of tutorials, and topical workshops that provide a less formal setting for the exchange of ideas.</p>
             </div>
           </div>
         </div>
       </div>
+
 
     </section>
   </main>
@@ -192,11 +191,11 @@
     <div class="footer">
       <h3>Explore AI World!</h3>
       <div class="footer__links">
-        <a href="index.html">Home</a>
-        <a href="news.html">AI News</a>
-        <a href="tools.html">AI Tools</a>
-        <a href="jobs.html">AI Jobs</a>
-        <a href="conferences.html">AI Conferences</a>
+        <a href="index.html" aria-label="Go to Home">Home</a>
+        <a href="news.html" aria-label="Read AI News">AI news</a>
+        <a href="tools.html" aria-label="Explore AI Tools">AI Tools</a>
+        <a href="jobs.html" aria-label="Find AI Jobs">AI Jobs</a>
+        <a href="conferences.html" aria-label="Discover AI Conferences">AI conferences</a>
       </div>
       <p>&#169;Mariia Drobina, 2023</p>
     </div>
