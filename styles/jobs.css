@@ -9,6 +9,9 @@ main{
   position: relative;
   z-index: 3;
 }
+nav{
+  position: relative;
+}
 .main-header{
   text-align: center;
   animation: fadeInBottom 1s ease-in-out;

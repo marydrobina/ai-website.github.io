@@ -19,11 +19,13 @@ main{
   gap: 2rem;
   justify-content: center;
 }
+nav{
+  position: relative;
+}
 .main-header{
   font-size: clamp(2rem, 5vw, var(--main-heading-font-size));
   text-align: center;
   animation: fadeInBottom 1s ease-in-out;
-  margin-top: 4rem;
 }
 .card{
   display: flex;

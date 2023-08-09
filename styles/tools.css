@@ -9,6 +9,9 @@ main{
   position: relative;
   z-index: 3;
 }
+nav{
+  position: relative;
+}
 #main-navigation{
   position: relative;
   align-self: start;

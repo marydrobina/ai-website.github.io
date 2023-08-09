@@ -10,11 +10,13 @@ main{
   position: relative;
   z-index: 3;
 }
+nav{
+  position: relative;
+}
 #main-navigation{
   position: relative;
-
-  position: relative;
   align-self: start;
+  z-index: 3;
 }
 #news-collage-section h1{
   text-align: center;
