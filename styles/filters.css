@@ -1,11 +1,11 @@
-.filters-wrapper{
+.filters-wrapper {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
   animation: fadeInBottom 1s ease-in-out;
-  justify-content: center
+  justify-content: center;
 }
-.filter{
+.filter {
   background-color: var(--clr-accent-opacity);
   padding: 0.6rem 1.5rem;
   border-radius: 5px;
@@ -14,15 +14,15 @@
 
   transition: all 0.2s ease-in-out;
 }
-.filter:hover{
+.filter:hover {
   cursor: pointer;
   transform: scale(110%);
 }
-.filter p{
+.filter p {
   font-size: clamp(1rem, 1vw, var(--buttons-font-size));
 }
-@media screen and (max-width: 768px){
-  .filter{
+@media screen and (max-width: 768px) {
+  .filter {
     padding: 1% 2%;
   }
 }

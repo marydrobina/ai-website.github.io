@@ -1,4 +1,4 @@
-#main-navigation{
+#main-navigation {
   position: absolute;
   z-index: 2;
   width: 100%;
@@ -10,28 +10,28 @@
   animation-duration: 1.7s;
   animation-fill-mode: both;
 }
-.accessibility{
+.accessibility {
   z-index: 2;
   margin-right: 4rem;
   animation-name: fadeInTop;
   animation-duration: 1.7s;
   animation-fill-mode: both;
 }
-.accessibility img{
+.accessibility img {
   width: 50px;
   height: 50px;
 }
-nav{
+nav {
   padding-top: 0.3rem;
   position: absolute;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-header{
+header {
   width: 100%;
 }
-.navigation__element a{
+.navigation__element a {
   color: var(--clr-light);
   font-weight: var(--font-weight-300);
 
@@ -41,23 +41,23 @@ header{
 .navigation .icon .cross-menu {
   display: none;
 }
-.navigation__element a:hover{
-  color: var(--clr-accent-opacity-light)
+.navigation__element a:hover {
+  color: var(--clr-accent-opacity-light);
 }
 @media screen and (max-width: 768px) {
-  .navigation li{
+  .navigation li {
     display: none;
   }
   .navigation .icon {
     width: clamp(50px, 15%, 70px);
     float: right;
   }
-  .navigation .icon .hamburger-menu{
+  .navigation .icon .hamburger-menu {
     display: block;
     margin-left: 1rem;
   }
 
-  #main-navigation{
+  #main-navigation {
     padding-left: 0;
   }
 
@@ -72,7 +72,7 @@ header{
   .navigation.responsive .hamburger-menu {
     display: none;
   }
-  .navigation.responsive .cross-menu{
+  .navigation.responsive .cross-menu {
     width: clamp(50px, 15%, 70px);
     display: inline;
     position: absolute;
@@ -84,22 +84,22 @@ header{
     text-align: left;
   }
 
-  .footer__links{
+  .footer__links {
     flex-direction: column;
     text-align: center;
   }
-  .footer{
+  .footer {
     justify-content: center;
   }
 }
 /* ---------------------- Footer ------------------------*/
-footer{
+footer {
   margin-top: 2rem;
   position: relative;
   width: 100%;
   z-index: 3;
 }
-.footer{
+.footer {
   background-color: var(--clr-grey-opacity);
   color: var(--clr-light);
   display: flex;
@@ -110,25 +110,25 @@ footer{
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
 }
-.footer__links{
+.footer__links {
   display: flex;
   gap: 2rem;
   margin-bottom: 0.5rem;
 }
-.footer__links a{
+.footer__links a {
   color: var(--clr-light);
   font-size: clamp(0.9rem, 1vw, 1rem);
   font-weight: var(--font-weight-200);
   transition: all 0.2s ease-in-out;
 }
-.footer h3{
+.footer h3 {
   font-weight: var(--font-weight-300);
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
 }
-.footer__links a:hover{
+.footer__links a:hover {
   color: var(--clr-accent-opacity-light);
 }
-.footer p{
+.footer p {
   font-weight: var(--font-weight-200);
 }
