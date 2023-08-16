@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Metadata for character set and viewport -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mariia Drobina" />
+    <meta name="description" content="AI Website" />
+    <!-- Title of the webpage -->
     <title>Home</title>
 
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap" rel="stylesheet"> -->
-
-    <!-- <link rel="stylesheet" href="styles/style-index-page.css"> -->
+    <!-- External stylesheet links -->
     <link rel="stylesheet" href="styles/default.css" />
     <link rel="stylesheet" href="styles/particles.css" />
     <link rel="stylesheet" href="styles/animations.css" />
@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/accessebility.css" />
 
+    <!-- External script dependencies -->
     <script
       defer
       src="https://code.jquery.com/jquery-3.7.0.min.js"
@@ -29,6 +30,7 @@
     <script defer src="scripts/script.js" type="text/javascript"></script>
   </head>
   <body>
+    <!-- Website header containing navigation menu -->
     <header>
       <nav aria-label="Main Navigation">
         <ul id="main-navigation" class="navigation" role="list">
@@ -48,6 +50,7 @@
             <a href="conferences.html">AI Conferences</a>
           </li>
           <li class="navigation__element"><a href="report.html">Report</a></li>
+          <!-- Hamburger menu icon -->
           <a href="javascript:void(0);" class="icon">
             <img
               class="hamburger-menu"
@@ -65,60 +68,84 @@
     </header>
 
     <main>
+      <!-- Container for animated circles -->
       <div class="all-circles-container"></div>
+      <!-- Section 1: Hero Banner -->
       <section>
+        <!-- Hero Banner Container -->
         <div class="hero">
+          <!-- Hero Image -->
           <div id="hero-img">
             <img src="assets/hero2.jpg" alt="AI Ascendancy Hero Image" />
           </div>
+          <!-- Hero Text -->
           <div class="hero-text">
             <h1>Welcome to the AI Ascendancy</h1>
           </div>
         </div>
       </section>
 
+      <!-- Section 2: Overview -->
       <section class="center divider">
+        <!-- Overview Title -->
         <h1 class="title toAnim">Overview</h1>
 
+        <!-- Card 1: Read Latest AI News -->
         <div class="card divider toAnim">
+          <!-- Card Image -->
           <div class="card__img">
             <img src="assets/tech-news/robot.png" alt="Robot Illustration" />
           </div>
+          <!-- Card Description -->
           <div class="card__description">
+            <!-- Card Text -->
             <div class="card__description__text">
+              <!-- Card Title -->
               <h1>Read Latest AI News</h1>
+              <!-- Card Features List -->
               <ul role="list">
+                <!-- Feature 1 -->
                 <li>
                   <strong>Comprehensive Coverage:</strong> We cover a wide range
                   of AI-related topics, including machine learning, natural
                   language processing, computer vision and more.
                 </li>
+                <!-- Feature 2 -->
                 <li>
                   <strong>Timely Updates:</strong> AI is constantly advancing,
                   and our news tab ensures you're always in the know. We update
                   the section frequently, bringing you the latest headlines and
                   insights from the forefront of AI research and industry.
                 </li>
+                <!-- Feature 3 -->
                 <li>
                   <strong>Expertly Curated:</strong> Our team of AI experts
                   hand-picks articles to ensure quality and relevance.
                 </li>
               </ul>
             </div>
+            <!-- Call to Action Button -->
             <a href="news.html" class="btn">Read News</a>
           </div>
         </div>
 
+        <!-- Card 2: Use AI Tools -->
         <div class="card divider toAnim reverse">
+          <!-- Card Description -->
           <div class="card__description">
+            <!-- Card Text -->
             <div class="card__description__text">
+              <!-- Card Title -->
               <h1>Use AI Tools</h1>
+              <!-- Card Features List -->
               <ul role="list">
+                <!-- Feature 1 -->
                 <li>
                   <strong>Diversity of Tools:</strong> Our collection includes a
                   diverse array of AI tools, each tailored for specific tasks
                   and applications.
                 </li>
+                <!-- Feature 2 -->
                 <li>
                   <strong>User-Friendly Interface:</strong> We prioritize tools
                   with intuitive interfaces, ensuring that even those without
@@ -126,6 +153,7 @@
                   you're a beginner or an AI pro, our tools make it easy to get
                   started and achieve results.
                 </li>
+                <!-- Feature 3 -->
                 <li>
                   <strong>Support and Community:</strong> Many of the tools we
                   present have active user communities and forums. Connect with
@@ -134,24 +162,33 @@
                 </li>
               </ul>
             </div>
+            <!-- Call to Action Button -->
             <a href="tools.html" class="btn">Use AI Tools</a>
           </div>
+          <!-- Card Image -->
           <div class="card__img">
             <img src="assets/tech-news/ai.jpg" alt="AI Illustration" />
           </div>
         </div>
 
+        <!-- Card 3: Look for AI Jobs -->
         <div class="card divider toAnim">
+          <!-- Card Image -->
           <div class="card__img">
             <img
               src="assets/tech-news/computer.png"
               alt="Computer Illustration"
             />
           </div>
+          <!-- Card Description -->
           <div class="card__description">
+            <!-- Card Text -->
             <div class="card__description__text">
+              <!-- Card Title -->
               <h1>Look for AI Jobs</h1>
+              <!-- Card Features List -->
               <ul role="list">
+                <!-- Feature 1 -->
                 <li>
                   <strong>Curated AI Job Listings:</strong> We meticulously
                   curate job postings from various industries, including tech
@@ -159,6 +196,7 @@
                   listing is handpicked to ensure relevance and quality, saving
                   you time and effort in your job search.
                 </li>
+                <!-- Feature 2 -->
                 <li>
                   <strong>Diverse Positions:</strong> Whether you are an AI
                   researcher, machine learning engineer, data scientist,
@@ -166,35 +204,45 @@
                   our job listings cover a wide range of roles within the AI
                   domain.
                 </li>
+                <!-- Feature 3 -->
                 <li>
-                  <strong>Stay Informed: </strong> Our AI Jobs Page is regularly
+                  <strong>Stay Informed:</strong> Our AI Jobs Page is regularly
                   updated to ensure you have access to the latest AI job
                   openings as soon as they become available.
                 </li>
               </ul>
             </div>
+            <!-- Call to Action Button -->
             <a href="jobs.html" class="btn">Look for AI Jobs</a>
           </div>
         </div>
 
+        <!-- Card 4: Attend AI Conferences -->
         <div class="card divider toAnim reverse">
+          <!-- Card Description -->
           <div class="card__description">
+            <!-- Card Text -->
             <div class="card__description__text">
+              <!-- Card Title -->
               <h1>Attend AI Conferences</h1>
+              <!-- Card Features List -->
               <ul role="list">
+                <!-- Feature 1 -->
                 <li>
-                  <strong>Diverse Conference Selection: </strong>We feature a
+                  <strong>Diverse Conference Selection:</strong> We feature a
                   wide range of AI conferences from around the world. Whether
                   you're interested in general AI topics, specialized areas like
                   machine learning, computer vision, or ethical AI, you'll find
                   relevant events on our page.
                 </li>
+                <!-- Feature 2 -->
                 <li>
                   <strong>In-Person and Virtual Events:</strong> Our page
                   includes both in-person and virtual AI conferences, allowing
                   you to choose the format that suits your preferences and
                   current circumstances.
                 </li>
+                <!-- Feature 3 -->
                 <li>
                   <strong>Networking Opportunities:</strong> Expand your
                   network, collaborate on projects, and exchange ideas that can
@@ -202,8 +250,10 @@
                 </li>
               </ul>
             </div>
+            <!-- Call to Action Button -->
             <a href="conferences.html" class="btn">Attend AI Conferences</a>
           </div>
+          <!-- Card Image -->
           <div class="card__img">
             <img
               src="assets/tech-news/internet.png"
@@ -214,6 +264,7 @@
       </section>
     </main>
 
+    <!-- Footer section with navigation links and author information -->
     <footer class="divider">
       <div class="footer">
         <h3 id="footer-heading" class="footer__heading">Explore AI!</h3>
