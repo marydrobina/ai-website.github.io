@@ -1,466 +1,427 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Metadata for character set and viewport -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Mariia Drobina" />
-    <meta name="description" content="AI News" />
-    <!-- Title of the webpage -->
-    <title>AI News</title>
 
-    <!-- External stylesheet links -->
-    <link rel="stylesheet" href="styles/nav.css" />
-    <link rel="stylesheet" href="styles/default.css" />
-    <link rel="stylesheet" href="styles/particles.css" />
-    <link rel="stylesheet" href="styles/animations.css" />
-    <link rel="stylesheet" href="styles/news.css" />
+<head>
+  <!-- Metadata for character set and viewport -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Mariia Drobina" />
+  <meta name="description" content="AI News" />
+  <!-- Title of the webpage -->
+  <title>AI News</title>
 
-    <!-- External script dependencies -->
-    <script defer src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script defer src="scripts/particles.js" type="text/javascript"></script>
-    <script defer src="scripts/script.js" type="text/javascript"></script>
-  </head>
-  <body>
-    <!-- Website header containing navigation menu -->
-    <header>
-      <nav aria-label="Main Navigation">
-        <ul id="main-navigation" class="navigation" role="list">
-          <li class="navigation__element">
-            <a href="index.html">Home</a>
-          </li>
-          <li class="navigation__element" aria-current="page">
-            <a href="news.html">AI News</a>
-          </li>
-          <li class="navigation__element">
-            <a href="tools.html">AI Tools</a>
-          </li>
-          <li class="navigation__element">
-            <a href="jobs.html">AI Jobs</a>
-          </li>
-          <li class="navigation__element">
-            <a href="conferences.html">AI Conferences</a>
-          </li>
-          <li class="navigation__element">
-            <a href="report.html">Report</a>
-          </li>
-          <!-- Hamburger menu icon -->
+  <!-- External stylesheet links -->
+  <link rel="stylesheet" href="styles/nav.css" />
+  <link rel="stylesheet" href="styles/default.css" />
+  <link rel="stylesheet" href="styles/particles.css" />
+  <link rel="stylesheet" href="styles/animations.css" />
+  <link rel="stylesheet" href="styles/news.css" />
+
+  <!-- External script dependencies -->
+  <script defer src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script defer src="scripts/particles.js" type="text/javascript"></script>
+  <script defer src="scripts/script.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <!-- Website header containing navigation menu -->
+  <header>
+    <nav aria-label="Main Navigation">
+      <ul id="main-navigation" class="navigation" role="list">
+        <li class="navigation__element">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="navigation__element" aria-current="page">
+          <a href="news.html">AI News</a>
+        </li>
+        <li class="navigation__element">
+          <a href="tools.html">AI Tools</a>
+        </li>
+        <li class="navigation__element">
+          <a href="jobs.html">AI Jobs</a>
+        </li>
+        <li class="navigation__element">
+          <a href="conferences.html">AI Conferences</a>
+        </li>
+        <li class="navigation__element">
+          <a href="report.html">Report</a>
+        </li>
+        <!-- Hamburger menu icon -->
+        <li class="hamburger">
           <a href="javascript:void(0);" class="icon">
-            <img
-              class="hamburger-menu"
-              src="assets/icons/hamburger.png"
-              alt="Hamburger Menu"
-            />
-            <img
-              class="cross-menu"
-              src="assets/icons/cross.png"
-              alt="Close Menu"
-            />
+            <img class="hamburger-menu" src="assets/icons/hamburger.png" alt="Hamburger Menu" />
+            <img class="cross-menu" src="assets/icons/cross.png" alt="Close Menu" />
           </a>
-        </ul>
-      </nav>
-    </header>
-    <!-- Container for animated circles -->
-    <div class="all-circles-container"></div>
-    <main>
-      <!-- Latest News Section -->
-      <section
-        id="news-collage-section"
-        class="divider-2"
-        aria-labelledby="news-collage"
-      >
-        <!-- Main Header -->
-        <h1 class="main-header">Latest News</h1>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Container for animated circles -->
+  <div class="all-circles-container"></div>
+  <main>
+    <!-- Latest News Section -->
+    <section id="news-collage-section" class="divider-2" aria-labelledby="news-collage-section">
+      <!-- Main Header -->
+      <h1 class="main-header">Latest News</h1>
 
-        <!-- News Collage Container -->
-        <div class="news-collage main divider-2">
-          <!-- Small Column: Anthropic Launches ChatGPT Rival Claude 2 -->
-          <div class="news-collage__small-column">
-            <div class="news-collage__small-column__news left">
-              <!-- News Image -->
-              <div class="img-small">
-                <img
-                  class="img"
-                  src="assets/news/highly-detailed-3d-soft-light-a-captivating-visual-unveiling-a-researcher-...expertise-and-ais-analytical-capabilities-propelling-medical-advancements_h_TrePn6_upscaled.jpg"
-                  alt="News Picture"
-                />
-              </div>
-              <!-- News Description -->
-              <div class="news-collage__small-column__news__description">
-                <h3>Anthropic launches ChatGPT rival Claude 2</h3>
-                <p>
-                  Anthropic has launched Claude 2, an advanced large language
-                  model (LLM) that excels in coding, mathematics, and reasoning
-                  tasks. Claude 2 is designed to simulate conversations with a
-                  helpful colleague or personal assistant.
-                </p>
-              </div>
+      <!-- News Collage Container -->
+      <div class="news-collage main divider-2">
+        <!-- Small Column: Anthropic Launches ChatGPT Rival Claude 2 -->
+        <div class="news-collage__small-column">
+          <div class="news-collage__small-column__news left">
+            <!-- News Image -->
+            <div class="img-small">
+              <img class="img"
+                src="assets/news/highly-detailed-3d-soft-light-a-captivating-visual-unveiling-a-researcher-...expertise-and-ais-analytical-capabilities-propelling-medical-advancements_h_TrePn6_upscaled.jpg"
+                alt="News Picture" />
             </div>
-            <!-- Highlighted Box: GPT Detectors Can Be Biased Against Non-Native English Writers -->
-            <div class="news-collage__small-column__highlighted-box left">
-              <div class="news-collage__small-column__highlighted-box__heading">
-                <h3>
-                  GPT Detectors Can Be Biased Against Non-Native English Writers
-                </h3>
-                <hr />
-              </div>
+            <!-- News Description -->
+            <div class="news-collage__small-column__news__description">
+              <h3>Anthropic launches ChatGPT rival Claude 2</h3>
               <p>
-                Researchers show that computer programs commonly used to
-                determine if a text was written by artificial intelligence tend
-                to falsely label articles written by non-native language
-                speakers as AI
+                Anthropic has launched Claude 2, an advanced large language
+                model (LLM) that excels in coding, mathematics, and reasoning
+                tasks. Claude 2 is designed to simulate conversations with a
+                helpful colleague or personal assistant.
+              </p>
+            </div>
+          </div>
+          <!-- Highlighted Box: GPT Detectors Can Be Biased Against Non-Native English Writers -->
+          <div class="news-collage__small-column__highlighted-box left">
+            <div class="news-collage__small-column__highlighted-box__heading">
+              <h3>
+                GPT Detectors Can Be Biased Against Non-Native English Writers
+              </h3>
+              <hr />
+            </div>
+            <p>
+              Researchers show that computer programs commonly used to
+              determine if a text was written by artificial intelligence tend
+              to falsely label articles written by non-native language
+              speakers as AI
+            </p>
+          </div>
+        </div>
+
+        <!-- Big Column: MIT Scientists Build AI Models for Biology Research -->
+        <div class="news-collage__big-column background-grey">
+          <!-- News Image -->
+          <div class="img-big">
+            <img class="img" src="assets/news/image_L9RnjNrH_1690712647186_raw-transformed.jpeg" alt="News Picture" />
+          </div>
+          <!-- News Description -->
+          <div class="news-collage__big-column__decription">
+            <h3>
+              MIT scientists build a system that can generate AI models for
+              biology research
+            </h3>
+            <p>
+              Meet BioAutoMATED, the groundbreaking automated machine-learning
+              system developed by MIT researchers, led by the esteemed Jim
+              Collins. Imagine building powerful machine-learning models
+              without the need for expertise in the field. It slashes the time
+              and cost typically required for data preparation and model
+              selection, making it accessible to researchers in biology and
+              beyond. By automating data preprocessing and incorporating
+              multiple tools under one umbrella, BioAutoMATED explores a vast
+              search space of models, perfect for biological sequences like
+              DNA, RNA, and proteins.
+            </p>
+          </div>
+        </div>
+
+        <!-- Small Column: AI Helps Show How the Brain's Fluids Flow -->
+        <div class="news-collage__small-column">
+          <!-- Highlighted Box: AI Helps Show How the Brain's Fluids Flow -->
+          <div class="news-collage__small-column__highlighted-box right">
+            <div class="news-collage__small-column__highlighted-box__heading">
+              <h3>AI Helps Show How the Brain's Fluids Flow</h3>
+              <hr />
+            </div>
+            <p>
+              A new artificial intelligence-based technique for measuring
+              fluid flow around the brain's blood vessels could have big
+              implications for developing treatments for diseases such as
+              Alzheimer's.
+            </p>
+          </div>
+          <!-- News Image -->
+          <div class="news-collage__small-column__news right">
+            <div class="img-small">
+              <img class="img" src="assets/news/lama.jpg" alt="News Picture" />
+            </div>
+            <!-- News Description -->
+            <div class="news-collage__small-column__news__description">
+              <h3>Meta launches Llama 2 open-source LLM</h3>
+              <p>
+                Meta has introduced Llama 2, an open-source family of AI
+                language models which comes with a license allowing
+                integration into commercial products. The Llama 2 models range
+                in size from 7-70 billion parameters, making them a formidable
+                force in the AI landscape.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI in Medicine Section -->
+    <section id="news-gallery-section" class="divider" aria-labelledby="news-gallery-section">
+      <!-- Section Heading -->
+      <h2 class="heading toAnim">AI in Medicine</h2>
+      <!-- News Gallery Container -->
+      <div class="news-gallery toAnim divider">
+        <!-- News Item: Artificial Intelligence in Cardiology -->
+        <div class="news-gallery__news">
+          <!-- News Image -->
+          <div class="img-small">
+            <img class="img" src="assets/news/cardiology.jpg" alt="News Picture" />
+          </div>
+          <!-- News Description -->
+          <div class="news-collage__small-column__news__description">
+            <h3>Artificial Intelligence in Cardiology</h3>
+            <p>
+              Cardiology is a vast field that focuses on a large number of
+              diseases specifically dealing with the heart, the circulatory
+              system, and its functions. Use of artificial intelligence aims
+              to relieve doctors from this hurdle and extend better quality to
+              patients.
+            </p>
+          </div>
+        </div>
+
+        <!-- News Item: Artificial Intelligence and Deep Learning in Medicine -->
+        <div class="news-gallery__news">
+          <!-- News Image -->
+          <div class="img-small">
+            <img class="img" src="assets/news/brain.jpg" alt="News Picture" />
+          </div>
+          <!-- News Description -->
+          <div class="news-collage__small-column__news__description">
+            <h3>Artificial Intelligence and Deep Learning in Medicine</h3>
+            <p>
+              Deep Patient is a machine learning method. The algorithm was
+              modeled using unsupervised machine learning, wherein the machine
+              can learn to make decisions based on how similar the data is,
+              even if no output is provided.
+            </p>
+          </div>
+        </div>
+
+        <!-- News Item: Machine Learning in Drug Development -->
+        <div class="news-gallery__news">
+          <!-- News Image -->
+          <div class="img-small">
+            <img class="img" src="assets/news/drugs.jpg" alt="News Picture" />
+          </div>
+          <!-- News Description -->
+          <div class="news-collage__small-column__news__description">
+            <h3>Machine Learning in Drug Development</h3>
+            <p>
+              Machine learning plays an active part in sorting through the
+              immense amounts of biochemical data accumulated from high
+              throughput sequencing techniques. It makes drug discovery more
+              efficient.
+            </p>
+          </div>
+        </div>
+
+        <!-- News Item: Deep-Learning in Radiology -->
+        <div class="news-gallery__news">
+          <!-- News Image -->
+          <div class="img-small">
+            <img class="img" src="assets/news/radiology.jpg" alt="News Picture" />
+          </div>
+          <!-- News Description -->
+          <div class="news-collage__small-column__news__description">
+            <h3>Deep-Learning in Radiology</h3>
+            <p>
+              Deep-learning is an important tool used in radiology and medical
+              imaging. Deep-learning techniques can be used to precisely
+              segment organs based on their boundaries to provide accurate
+              measurements.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI in Education Section -->
+    <section id="highlighted-news-section" class="divider" aria-labelledby="highlighted-news-section">
+      <!-- Highlighted Section Heading -->
+      <div class="highlighted-section toAnim">
+        <h2 class="heading toAnim">AI in Education</h2>
+        <!-- News Gallery Container -->
+        <div class="news-gallery toAnim divider">
+          <!-- News Item: AI Can Help Educators Test Teaching Materials -->
+          <div class="news-gallery__news">
+            <!-- News Image -->
+            <div class="img-small">
+              <img class="img" src="assets/news/students.jpg" alt="News Picture" />
+            </div>
+            <!-- News Description -->
+            <div class="news-collage__small-column__news__description">
+              <h3>
+                How AI Can Help Educators Test Whether Their Teaching
+                Materials Work
+              </h3>
+              <p>
+                The Open Learning Initiative has a statistics course. It's an
+                adaptive course — think of it as an interactive high-tech
+                textbook. Students are reading, watching videos, but more
+                importantly they're jumping in, answering questions and
+                getting targeted feedback.
               </p>
             </div>
           </div>
 
-          <!-- Big Column: MIT Scientists Build AI Models for Biology Research -->
-          <div class="news-collage__big-column background-grey">
+          <!-- News Item: Can AI Help Teachers With Grading? -->
+          <div class="news-gallery__news">
+            <!-- News Image -->
+            <div class="img-small">
+              <img class="img" src="assets/news/teacher.jpg" alt="News Picture" />
+            </div>
+            <!-- News Description -->
+            <div class="news-collage__small-column__news__description">
+              <h3>Can AI Help Teachers With Grading?</h3>
+              <p>
+                Assessing student work well is a time-consuming and hugely
+                important component of teaching, especially when students are
+                learning to write. The promise of AI to alleviate some of this
+                burden is potentially quite significant.
+              </p>
+            </div>
+          </div>
+
+          <!-- News Item: Tool Detects Cheating With ChatGPT -->
+          <div class="news-gallery__news">
+            <!-- News Image -->
+            <div class="img-small">
+              <img class="img" src="assets/news/cheating.jpg" alt="News Picture" />
+            </div>
+            <!-- News Description -->
+            <div class="news-collage__small-column__news__description">
+              <h3>
+                How Does a Tool That Detects Cheating With ChatGPT Grapple
+                With 'False Positives'?
+              </h3>
+              <p>
+                William Quarterman, a student at the University of California
+                at Davis, was accused of cheating. His professor said he'd
+                used ChatGPT to take a history exam, the charge buttressed by
+                GPTZero. Quarterman swore his innocence, though, and he was
+                later let off the hook after he presented the log of changes
+                he made in a Google Doc.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hot News Section -->
+    <section id="hot-news" class="divider" aria-labelledby="hot-news">
+      <!-- Section Heading -->
+      <h2 class="heading toAnim">Hot News</h2>
+      <!-- News Collage Container -->
+      <div class="news-collage secondary divider">
+        <!-- Big Column: ChatGPT Creator Withholds Latest AI -->
+        <div class="news-collage__big-column">
+          <div class="background-grey toAnim description-gap">
             <!-- News Image -->
             <div class="img-big">
-              <img
-                class="img"
-                src="assets/news/image_L9RnjNrH_1690712647186_raw-transformed.jpeg"
-                alt="News Picture"
-              />
+              <img class="img" src="assets/news/gpt.jpg" alt="News Picture" />
             </div>
             <!-- News Description -->
             <div class="news-collage__big-column__decription">
               <h3>
-                MIT scientists build a system that can generate AI models for
-                biology research
+                ChatGPT creator withholds latest AI over fears it's too
+                powerful
               </h3>
               <p>
-                Meet BioAutoMATED, the groundbreaking automated machine-learning
-                system developed by MIT researchers, led by the esteemed Jim
-                Collins. Imagine building powerful machine-learning models
-                without the need for expertise in the field. It slashes the time
-                and cost typically required for data preparation and model
-                selection, making it accessible to researchers in biology and
-                beyond. By automating data preprocessing and incorporating
-                multiple tools under one umbrella, BioAutoMATED explores a vast
-                search space of models, perfect for biological sequences like
-                DNA, RNA, and proteins.
-              </p>
-            </div>
-          </div>
-
-          <!-- Small Column: AI Helps Show How the Brain's Fluids Flow -->
-          <div class="news-collage__small-column">
-            <!-- Highlighted Box: AI Helps Show How the Brain's Fluids Flow -->
-            <div class="news-collage__small-column__highlighted-box right">
-              <div class="news-collage__small-column__highlighted-box__heading">
-                <h3>AI Helps Show How the Brain's Fluids Flow</h3>
-                <hr />
-              </div>
-              <p>
-                A new artificial intelligence-based technique for measuring
-                fluid flow around the brain's blood vessels could have big
-                implications for developing treatments for diseases such as
-                Alzheimer's.
-              </p>
-            </div>
-            <!-- News Image -->
-            <div class="news-collage__small-column__news right">
-              <div class="img-small">
-                <img
-                  class="img"
-                  src="assets/news/lama.jpg"
-                  alt="News Picture"
-                />
-              </div>
-              <!-- News Description -->
-              <div class="news-collage__small-column__news__description">
-                <h3>Meta launches Llama 2 open-source LLM</h3>
-                <p>
-                  Meta has introduced Llama 2, an open-source family of AI
-                  language models which comes with a license allowing
-                  integration into commercial products. The Llama 2 models range
-                  in size from 7-70 billion parameters, making them a formidable
-                  force in the AI landscape.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- AI in Medicine Section -->
-      <section class="divider" aria-labelledby="news-gallery">
-        <!-- Section Heading -->
-        <h2 class="heading toAnim">AI in Medicine</h2>
-        <!-- News Gallery Container -->
-        <div class="news-gallery toAnim divider">
-          <!-- News Item: Artificial Intelligence in Cardiology -->
-          <div class="news-gallery__news">
-            <!-- News Image -->
-            <div class="img-small">
-              <img
-                class="img"
-                src="assets/news/cardiology.jpg"
-                alt="News Picture"
-              />
-            </div>
-            <!-- News Description -->
-            <div class="news-collage__small-column__news__description">
-              <h3>Artificial Intelligence in Cardiology</h3>
-              <p>
-                Cardiology is a vast field that focuses on a large number of
-                diseases specifically dealing with the heart, the circulatory
-                system, and its functions. Use of artificial intelligence aims
-                to relieve doctors from this hurdle and extend better quality to
-                patients.
-              </p>
-            </div>
-          </div>
-
-          <!-- News Item: Artificial Intelligence and Deep Learning in Medicine -->
-          <div class="news-gallery__news">
-            <!-- News Image -->
-            <div class="img-small">
-              <img class="img" src="assets/news/brain.jpg" alt="News Picture" />
-            </div>
-            <!-- News Description -->
-            <div class="news-collage__small-column__news__description">
-              <h3>Artificial Intelligence and Deep Learning in Medicine</h3>
-              <p>
-                Deep Patient is a machine learning method. The algorithm was
-                modeled using unsupervised machine learning, wherein the machine
-                can learn to make decisions based on how similar the data is,
-                even if no output is provided.
-              </p>
-            </div>
-          </div>
-
-          <!-- News Item: Machine Learning in Drug Development -->
-          <div class="news-gallery__news">
-            <!-- News Image -->
-            <div class="img-small">
-              <img class="img" src="assets/news/drugs.jpg" alt="News Picture" />
-            </div>
-            <!-- News Description -->
-            <div class="news-collage__small-column__news__description">
-              <h3>Machine Learning in Drug Development</h3>
-              <p>
-                Machine learning plays an active part in sorting through the
-                immense amounts of biochemical data accumulated from high
-                throughput sequencing techniques. It makes drug discovery more
-                efficient.
-              </p>
-            </div>
-          </div>
-
-          <!-- News Item: Deep-Learning in Radiology -->
-          <div class="news-gallery__news">
-            <!-- News Image -->
-            <div class="img-small">
-              <img
-                class="img"
-                src="assets/news/radiology.jpg"
-                alt="News Picture"
-              />
-            </div>
-            <!-- News Description -->
-            <div class="news-collage__small-column__news__description">
-              <h3>Deep-Learning in Radiology</h3>
-              <p>
-                Deep-learning is an important tool used in radiology and medical
-                imaging. Deep-learning techniques can be used to precisely
-                segment organs based on their boundaries to provide accurate
-                measurements.
+                OpenAI, the creator of ChatGPT, is withholding key features of
+                its most powerful artificial intelligence tool over ethical
+                and legal fears. New GPT-4 tool can decode captcha puzzles
+                designed to separate humans from machines. The company
+                developed its latest GPT-4 chatbot to be multimodal, meaning
+                it can process images as well as text.
               </p>
             </div>
           </div>
         </div>
-      </section>
-
-      <!-- AI in Education Section -->
-      <section class="divider" aria-labelledby="highlighted-news">
-        <!-- Highlighted Section Heading -->
-        <div class="highlighted-section toAnim">
-          <h2 class="heading toAnim">AI in Education</h2>
-          <!-- News Gallery Container -->
-          <div class="news-gallery toAnim divider">
-            <!-- News Item: AI Can Help Educators Test Teaching Materials -->
-            <div class="news-gallery__news">
-              <!-- News Image -->
-              <div class="img-small">
-                <img
-                  class="img"
-                  src="assets/news/students.jpg"
-                  alt="News Picture"
-                />
-              </div>
-              <!-- News Description -->
-              <div class="news-collage__small-column__news__description">
-                <h3>
-                  How AI Can Help Educators Test Whether Their Teaching
-                  Materials Work
-                </h3>
-                <p>
-                  The Open Learning Initiative has a statistics course. It's an
-                  adaptive course — think of it as an interactive high-tech
-                  textbook. Students are reading, watching videos, but more
-                  importantly they're jumping in, answering questions and
-                  getting targeted feedback.
-                </p>
-              </div>
+        <!-- Big Highlighted Box: ChatGPT Rival With 'No Ethical Boundaries' -->
+        <div class="big-highlighted-box toAnim">
+          <!-- Description 1 -->
+          <div class="big-highlighted-box__description">
+            <div class="news-collage__small-column__highlighted-box__heading">
+              <h3>
+                ChatGPT rival with 'no ethical boundaries' sold on dark web
+              </h3>
+              <hr />
             </div>
-
-            <!-- News Item: Can AI Help Teachers With Grading? -->
-            <div class="news-gallery__news">
-              <!-- News Image -->
-              <div class="img-small">
-                <img
-                  class="img"
-                  src="assets/news/teacher.jpg"
-                  alt="News Picture"
-                />
-              </div>
-              <!-- News Description -->
-              <div class="news-collage__small-column__news__description">
-                <h3>Can AI Help Teachers With Grading?</h3>
-                <p>
-                  Assessing student work well is a time-consuming and hugely
-                  important component of teaching, especially when students are
-                  learning to write. The promise of AI to alleviate some of this
-                  burden is potentially quite significant.
-                </p>
-              </div>
+            <p>
+              A ChatGPT-style AI tool with “no ethical boundaries or
+              limitations” is offering hackers a way to perform attacks on a
+              never-before-seen scale, researchers have warned.
+            </p>
+          </div>
+          <!-- Description 2 -->
+          <div class="big-highlighted-box__description">
+            <div class="news-collage__small-column__highlighted-box__heading">
+              <h3>Hollywood AI backlash</h3>
+              <hr />
             </div>
-
-            <!-- News Item: Tool Detects Cheating With ChatGPT -->
-            <div class="news-gallery__news">
-              <!-- News Image -->
-              <div class="img-small">
-                <img
-                  class="img"
-                  src="assets/news/cheating.jpg"
-                  alt="News Picture"
-                />
-              </div>
-              <!-- News Description -->
-              <div class="news-collage__small-column__news__description">
-                <h3>
-                  How Does a Tool That Detects Cheating With ChatGPT Grapple
-                  With 'False Positives'?
-                </h3>
-                <p>
-                  William Quarterman, a student at the University of California
-                  at Davis, was accused of cheating. His professor said he'd
-                  used ChatGPT to take a history exam, the charge buttressed by
-                  GPTZero. Quarterman swore his innocence, though, and he was
-                  later let off the hook after he presented the log of changes
-                  he made in a Google Doc.
-                </p>
-              </div>
+            <p>
+              Hollywood's actors and writers have both gone on strike for the
+              first time since 1960, as they protest against a potentially
+              unsettling future for the industry. Writers and actors fear
+              about tech replacing role
+            </p>
+          </div>
+          <!-- Description 3 -->
+          <div class="big-highlighted-box__description">
+            <div class="news-collage__small-column__highlighted-box__heading">
+              <h3>Google is stealing everything created on the internet</h3>
+              <hr />
             </div>
+            <p>
+              Lawsuit alleges tech giant took data "without regard for the
+              privacy, property, and consumer protection interests of hundreds
+              of millions of Americans" to train its AI chatbot Bard
+            </p>
+          </div>
+          <!-- Description 4 -->
+          <div class="big-highlighted-box__description">
+            <div class="news-collage__small-column__highlighted-box__heading">
+              <h3>Harvard's new computer science teacher is a chatbot</h3>
+              <hr />
+            </div>
+            <p>
+              Students enrolled in the university's flagship CS50 course will
+              be presented with the AI teacher in September. Harvard
+              University plans to use an AI chatbot similar to ChatGPT as an
+              instructor on its flagship coding course.
+            </p>
           </div>
         </div>
-      </section>
-
-      <!-- Hot News Section -->
-      <section id="hot-news" class="divider" aria-labelledby="hot-news">
-        <!-- Section Heading -->
-        <h2 class="heading toAnim">Hot News</h2>
-        <!-- News Collage Container -->
-        <div class="news-collage secondary divider">
-          <!-- Big Column: ChatGPT Creator Withholds Latest AI -->
-          <div class="news-collage__big-column">
-            <div class="background-grey toAnim description-gap">
-              <!-- News Image -->
-              <div class="img-big">
-                <img class="img" src="assets/news/gpt.jpg" alt="News Picture" />
-              </div>
-              <!-- News Description -->
-              <div class="news-collage__big-column__decription">
-                <h3>
-                  ChatGPT creator withholds latest AI over fears it's too
-                  powerful
-                </h3>
-                <p>
-                  OpenAI, the creator of ChatGPT, is withholding key features of
-                  its most powerful artificial intelligence tool over ethical
-                  and legal fears. New GPT-4 tool can decode captcha puzzles
-                  designed to separate humans from machines. The company
-                  developed its latest GPT-4 chatbot to be multimodal, meaning
-                  it can process images as well as text.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Big Highlighted Box: ChatGPT Rival With 'No Ethical Boundaries' -->
-          <div class="big-highlighted-box toAnim">
-            <!-- Description 1 -->
-            <div class="big-highlighted-box__description">
-              <div class="news-collage__small-column__highlighted-box__heading">
-                <h3>
-                  ChatGPT rival with 'no ethical boundaries' sold on dark web
-                </h3>
-                <hr />
-              </div>
-              <p>
-                A ChatGPT-style AI tool with “no ethical boundaries or
-                limitations” is offering hackers a way to perform attacks on a
-                never-before-seen scale, researchers have warned.
-              </p>
-            </div>
-            <!-- Description 2 -->
-            <div class="big-highlighted-box__description">
-              <div class="news-collage__small-column__highlighted-box__heading">
-                <h3>Hollywood AI backlash</h3>
-                <hr />
-              </div>
-              <p>
-                Hollywood's actors and writers have both gone on strike for the
-                first time since 1960, as they protest against a potentially
-                unsettling future for the industry. Writers and actors fear
-                about tech replacing role
-              </p>
-            </div>
-            <!-- Description 3 -->
-            <div class="big-highlighted-box__description">
-              <div class="news-collage__small-column__highlighted-box__heading">
-                <h3>Google is stealing everything created on the internet</h3>
-                <hr />
-              </div>
-              <p>
-                Lawsuit alleges tech giant took data "without regard for the
-                privacy, property, and consumer protection interests of hundreds
-                of millions of Americans" to train its AI chatbot Bard
-              </p>
-            </div>
-            <!-- Description 4 -->
-            <div class="big-highlighted-box__description">
-              <div class="news-collage__small-column__highlighted-box__heading">
-                <h3>Harvard's new computer science teacher is a chatbot</h3>
-                <hr />
-              </div>
-              <p>
-                Students enrolled in the university's flagship CS50 course will
-                be presented with the AI teacher in September. Harvard
-                University plans to use an AI chatbot similar to ChatGPT as an
-                instructor on its flagship coding course.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <!-- Footer section with navigation links and author information -->
-    <footer class="divider">
-      <div class="footer">
-        <h3>Explore AI World!</h3>
-        <div class="footer__links">
-          <a href="index.html" aria-label="Go to Home">Home</a>
-          <a href="news.html" aria-label="Read AI News">AI news</a>
-          <a href="tools.html" aria-label="Explore AI Tools">AI Tools</a>
-          <a href="jobs.html" aria-label="Find AI Jobs">AI Jobs</a>
-          <a href="conferences.html" aria-label="Discover AI Conferences"
-            >AI Conferences</a
-          >
-        </div>
-        <p>&#169;Mariia Drobina, 2023</p>
       </div>
-    </footer>
-  </body>
+    </section>
+  </main>
+  <!-- Footer section with navigation links and author information -->
+  <footer class="divider">
+    <div class="footer">
+      <h3>Explore AI World!</h3>
+      <div class="footer__links">
+        <a href="index.html" aria-label="Go to Home">Home</a>
+        <a href="news.html" aria-label="Read AI News">AI news</a>
+        <a href="tools.html" aria-label="Explore AI Tools">AI Tools</a>
+        <a href="jobs.html" aria-label="Find AI Jobs">AI Jobs</a>
+        <a href="conferences.html" aria-label="Discover AI Conferences">AI Conferences</a>
+      </div>
+      <p>&#169;Mariia Drobina, 2023</p>
+    </div>
+  </footer>
+</body>
+
 </html>

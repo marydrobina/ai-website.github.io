@@ -45,7 +45,7 @@ header {
 
 /* Responsive styling for navigation (tablet) */
 @media screen and (max-width: 768px) {
-  .navigation li {
+  .navigation li:not(.hamburger) {
     display: none;
   }
   .navigation .icon {
@@ -54,7 +54,6 @@ header {
   }
   .navigation .icon .hamburger-menu {
     display: block;
-    margin-left: 1rem;
   }
 
   #main-navigation {
