@@ -1,3 +1,4 @@
+/* Styling for the main navigation */
 #main-navigation {
   position: absolute;
   z-index: 2;
@@ -5,22 +6,12 @@
   padding-left: 4rem;
   display: flex;
   gap: 3rem;
-  /* backdrop-filter: blur(5px); */
   animation-name: fadeInTop;
   animation-duration: 1.7s;
   animation-fill-mode: both;
 }
-.accessibility {
-  z-index: 2;
-  margin-right: 4rem;
-  animation-name: fadeInTop;
-  animation-duration: 1.7s;
-  animation-fill-mode: both;
-}
-.accessibility img {
-  width: 50px;
-  height: 50px;
-}
+
+/* Styling for navigation */
 nav {
   padding-top: 0.3rem;
   position: absolute;
@@ -28,22 +19,31 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+
+/* Styling for header */
 header {
   width: 100%;
 }
+
+/* Styling for navigation elements */
 .navigation__element a {
   color: var(--clr-light);
   font-weight: var(--font-weight-300);
-
   transition: all 0.2s ease-in-out;
 }
+
+/* Styling for navigation element hover */
+.navigation__element a:hover {
+  color: var(--clr-accent-opacity-light);
+}
+
+/* Styling for navigation icons */
 .navigation .icon .hamburger-menu,
 .navigation .icon .cross-menu {
   display: none;
 }
-.navigation__element a:hover {
-  color: var(--clr-accent-opacity-light);
-}
+
+/* Responsive styling for navigation (tablet) */
 @media screen and (max-width: 768px) {
   .navigation li {
     display: none;
@@ -92,13 +92,16 @@ header {
     justify-content: center;
   }
 }
-/* ---------------------- Footer ------------------------*/
+
+/* Styling for the footer */
 footer {
   margin-top: 2rem;
   position: relative;
   width: 100%;
   z-index: 3;
 }
+
+/* Styling for the footer container */
 .footer {
   background-color: var(--clr-grey-opacity);
   color: var(--clr-light);
@@ -110,25 +113,35 @@ footer {
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
 }
+
+/* Styling for footer links */
 .footer__links {
   display: flex;
   gap: 2rem;
   margin-bottom: 0.5rem;
 }
+
+/* Styling for footer link text */
 .footer__links a {
   color: var(--clr-light);
   font-size: clamp(0.9rem, 1vw, 1rem);
   font-weight: var(--font-weight-200);
   transition: all 0.2s ease-in-out;
 }
+
+/* Styling for footer link hover */
+.footer__links a:hover {
+  color: var(--clr-accent-opacity-light);
+}
+
+/* Styling for footer headings */
 .footer h3 {
   font-weight: var(--font-weight-300);
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
 }
-.footer__links a:hover {
-  color: var(--clr-accent-opacity-light);
-}
+
+/* Styling for footer paragraphs */
 .footer p {
   font-weight: var(--font-weight-200);
 }

@@ -1,4 +1,11 @@
+/**
+ * Class for filtering tools based on categories.
+ */
 class ToolsFilter {
+  /**
+   * Constructs a ToolsFilter instance.
+   * @param {string} entity - The entity type to filter (tool or job).
+   */
   constructor(entity) {
     this.entity = entity;
     this.filter = function (button) {
@@ -6,6 +13,11 @@ class ToolsFilter {
     };
   }
 
+  /**
+   * Retrieves lists of tags associated with tools.
+   * @private
+   * @returns {Object} An object containing tool names as keys and corresponding tag arrays as values.
+   */
   #getListsOfTags() {
     const $tags = $(".tags");
     const $toolsNames = $(`.${this.entity}__description__text`).find("h3");
@@ -19,10 +31,15 @@ class ToolsFilter {
     }
     return tagsList;
   }
+
+  /**
+   * Filters tools based on the selected category.
+   * @private
+   * @param {string} category - The category to filter by.
+   */
   #filterTools(category) {
     this.#resetToolsDisplay();
     if (category.toLowerCase().trim() == "all") {
-      console.log(category);
       return;
     }
     const listsOfTags = this.#getListsOfTags();
@@ -48,6 +65,11 @@ class ToolsFilter {
       }
     }
   }
+
+  /**
+   * Resets the display of tools to their default state.
+   * @private
+   */
   #resetToolsDisplay() {
     const $tools = $(`.${this.entity}`);
     $tools.css("display", "flex");

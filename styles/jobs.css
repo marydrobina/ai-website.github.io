@@ -1,32 +1,44 @@
+/* Styling for the body */
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+/* Styling for the main content */
 main {
   width: 90%;
   max-width: 1440px;
   position: relative;
   z-index: 3;
 }
+
+/* Styling for the navigation */
 nav {
   position: relative;
 }
+
+/* Styling for the main header */
 .main-header {
   text-align: center;
   animation: fadeInBottom 1s ease-in-out;
   margin-bottom: 1em;
 }
+
+/* Styling for the main navigation */
 #main-navigation {
   position: relative;
   align-self: start;
 }
 
+/* Styling for the jobs wrapper */
 .jobs-wrapper {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
+
+/* Styling for individual jobs */
 .job {
   display: flex;
   gap: 2rem;
@@ -35,23 +47,31 @@ nav {
   padding: 1rem 2rem 1rem 1rem;
   animation: fadeInBottom 1s ease-in-out;
 }
+
+/* Styling for job images */
 .job__image {
   width: 100px;
   height: 100px;
   overflow: hidden;
   border-radius: 10px;
 }
+
+/* Styling for job image content */
 .job__image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
+/* Styling for job descriptions */
 .job__description {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
+/* Styling for job description text */
 .job__description__text {
   display: flex;
   justify-content: space-between;
@@ -59,35 +79,48 @@ nav {
   font-weight: var(--font-weight-300);
   font-size: clamp(0.8rem, 1vw, var(--paragraph-font-size));
 }
+
+/* Styling for job description headings */
 .job__description__text h3 {
   font-size: clamp(1.5rem, 1vw, var(--small-heading-font-size));
   color: var(--clr-accent-opacity-light);
   font-weight: var(--font-weight-500);
 }
+
+/* Styling for job description subheadings */
 .job__description__text h4 {
   font-weight: var(--font-weight-300);
 }
+
+/* Styling for job description tags */
 .job__description__tags {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   font-size: clamp(0.8rem, 1vw, var(--paragraph-font-size));
 }
+
+/* Styling for job description tag headings */
 .job__description__tags h4 {
   font-size: var(--buttons-font-size);
   color: var(--clr-accent-opacity-light);
   font-weight: var(--font-weight-500);
 }
+
+/* Styling for tags */
 .tags {
   display: flex;
   gap: 1rem;
 }
+
+/* Styling for individual tags */
 .tags__tag {
   background-color: var(--clr-accent-opacity);
   padding: 0.3rem 1rem;
   border-radius: 5px;
 }
 
+/* Responsive styling for jobs (tablet) */
 @media screen and (max-width: 768px) {
   .job {
     flex-direction: column;
@@ -100,6 +133,8 @@ nav {
     flex-wrap: wrap;
   }
 }
+
+/* Responsive styling for jobs (mobile) */
 @media screen and (max-width: 425px) {
   .job {
     align-items: center;

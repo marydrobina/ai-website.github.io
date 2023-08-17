@@ -1,33 +1,46 @@
-/* ---------------------- Main news collage ------------------------*/
+/* Styling for the main news collage section */
+/* Section setup */
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+/* Main content width */
 main {
   width: 80%;
   max-width: 1440px;
   position: relative;
   z-index: 3;
 }
+
+/* Navigation styling */
 nav {
   position: relative;
 }
+
+/* Main navigation */
 #main-navigation {
   position: relative;
   align-self: start;
   z-index: 3;
 }
+
+/* News collage section header */
 #news-collage-section h1 {
   text-align: center;
 }
+
+/* Divider spacing */
 .divider {
   margin-top: 3rem;
 }
+
 .divider-2 {
   margin-top: 2rem;
 }
 
+/* News collage layout */
 .news-collage {
   display: flex;
   gap: 2.5rem;
@@ -35,39 +48,42 @@ nav {
   position: relative;
   font-size: clamp(0.8rem, 1vw, 1rem);
 }
+
+/* Image styling for small and big images */
 .img-small {
   width: 100%;
   height: clamp(15rem, 5vw, 16rem);
-  /* border: 1px solid red; */
-  /* overflow: hidden; */
-  /* border: 1px solid red; */
 }
+
 .img-big {
   width: 100%;
   height: 33rem;
-  /* overflow: hidden; */
-  /* border: 1px solid red; */
 }
+
 .img-small img,
 .img-big img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
+/* Common image styling */
 .img {
   border-radius: 4px;
 }
+
+/* Small news column styling */
 .news-collage__small-column {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex: 1;
   gap: 1.5rem;
-
   animation-name: fadeInBottom;
   animation-duration: 1.8s;
 }
 
+/* Styling for small news articles */
 .news-collage__small-column__news {
   display: flex;
   flex-direction: column;
@@ -78,16 +94,19 @@ nav {
   padding: 1rem 1rem;
   border-radius: 5px;
 }
+
+/* Styling for big news descriptions and small news descriptions */
 .news-collage__big-column__decription,
 .news-collage__small-column__news__description {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
+
+/* Styling for highlighted box in small column */
 .news-collage__small-column__highlighted-box {
   background-color: var(--clr-accent-opacity);
   color: var(--clr-light);
-
   padding: 1rem 1rem;
   border-radius: 4px;
   display: flex;
@@ -97,14 +116,20 @@ nav {
   backdrop-filter: blur(3px);
   justify-content: center;
 }
+
+/* Styling for highlighted box heading in small column */
 .news-collage__small-column__highlighted-box__heading {
   display: flex;
   align-items: center;
   flex: 1;
 }
+
+/* Styling for highlighted box heading text in small column */
 .news-collage__small-column__highlighted-box__heading h3 {
   flex: 2;
 }
+
+/* Styling for highlighted box heading line in small column */
 .news-collage__small-column__highlighted-box__heading hr {
   width: 100%;
   background-color: var(--clr-light);
@@ -112,6 +137,8 @@ nav {
   height: 2px;
   flex: 1;
 }
+
+/* Styling for big column in news collage */
 .news-collage__big-column {
   display: flex;
   flex-direction: column;
@@ -119,25 +146,32 @@ nav {
   flex: 2;
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
-
   animation-name: fadeInBottom;
   animation-duration: 1s;
 }
+
+/* Styling for grey background boxes */
 .background-grey {
   background-color: var(--clr-grey-opacity);
   padding: 1rem 1rem;
   border-radius: 5px;
 }
+
+/* Gap styling for descriptions */
 .description-gap {
   display: flex;
   flex-direction: column;
   gap: var(--description-gap);
   flex: 2;
 }
+
+/* Styling for main header */
 .main-header {
   animation-name: fadeInBottom;
   animation-duration: 0.7s;
 }
+
+/* Hover animation for news elements */
 .news-collage__big-column,
 .news-collage__small-column__highlighted-box,
 .news-collage__small-column__news,
@@ -146,6 +180,7 @@ nav {
   transition: all 0.3s ease-in-out;
 }
 
+/* Hover effect for news elements */
 .news-collage__big-column:hover,
 .news-collage__small-column__highlighted-box:hover,
 .news-collage__small-column__news:hover,
@@ -155,12 +190,14 @@ nav {
   cursor: pointer;
 }
 
-/* ---------------------- Gallery news section ------------------------*/
+/* Gallery news section styling */
 .news-gallery {
   display: flex;
   gap: 4rem;
   position: relative;
 }
+
+/* Styling for individual news articles in gallery */
 .news-gallery__news {
   display: flex;
   flex-direction: column;
@@ -170,6 +207,7 @@ nav {
   font-size: clamp(0.8rem, 1vw, 1rem);
 }
 
+/* Highlighted section styling */
 .highlighted-section {
   background-color: var(--clr-accent-opacity);
   color: var(--clr-light);
@@ -180,6 +218,7 @@ nav {
   backdrop-filter: blur(3px);
 }
 
+/* Big highlighted box styling */
 .big-highlighted-box {
   background-color: var(--clr-accent-opacity);
   color: var(--clr-light);
@@ -192,6 +231,8 @@ nav {
   padding: 1rem 1rem;
   gap: 1rem;
 }
+
+/* Styling for big news articles in collage */
 .news-collage__big-news {
   display: flex;
   flex-direction: column;
@@ -203,21 +244,24 @@ nav {
   padding: 1rem 1rem;
   border-radius: 5px;
 }
+
+/* Heading styling */
 .heading {
   text-align: center;
   font-weight: var(--font-weight-300);
   font-size: clamp(2rem, 10vw, var(--heading-font-size));
 }
+
+/* Description styling for big highlighted box */
 .big-highlighted-box__description {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
+/* Media queries for tablet screens and larger */
 @media screen and (max-width: 1024px) {
-  /* .news-collage__small-column{
-    flex-direction: row;
-  } */
+  /* Update layout for smaller screens */
   .news-collage {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -245,29 +289,9 @@ nav {
   .news-gallery__news {
     min-width: 30ch;
   }
-  .news-collage.secondary {
-    display: flex;
-    flex-direction: column;
-  }
-  .big-highlighted-box {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-  .big-highlighted-box {
-    .news-collage__small-column__highlighted-box__heading hr {
-      display: none;
-    }
-  }
-  /* .news-collage__small-column__highlighted-box{
-    justify-content: center;
-    height: 50%;
-  }
-  .news-collage__small-column__highlighted-box__heading{
-    flex: 0;
-  }
-} */
 }
 
+/* Media queries for tablets and larger screens */
 @media (max-width: 768px) {
   /* Tablets and larger screens */
   main {

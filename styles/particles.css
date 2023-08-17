@@ -1,3 +1,6 @@
+/* Styling for the animated circles effect */
+
+/* All circles container */
 .all-circles-container {
   position: absolute;
   height: 100%;
@@ -8,6 +11,8 @@
   transform: translate(-50%, -50%);
   z-index: 1;
 }
+
+/* Individual circle container */
 .circle_container {
   position: absolute;
   top: 50%;
@@ -15,6 +20,8 @@
   height: 10px;
   transform-origin: left center;
 }
+
+/* Styling for the animated circles */
 .circle {
   position: absolute;
   border-radius: 100%;
@@ -25,6 +32,8 @@
   animation-duration: 20s;
   animation-iteration-count: infinite;
 }
+
+/* Keyframes animation for the moving circles */
 @keyframes move {
   0% {
     transform: translateX(0px);
@@ -45,3 +54,16 @@
     opacity: 0;
   }
 }
+
+/* 
+  Explanation:
+  
+  - The ".all-circles-container" acts as a container for the entire animated circles effect. It's positioned absolutely and centered using the "transform" property. It hides any overflowing content.
+  
+  - The ".circle_container" represents each individual container for a moving circle. It's positioned relatively to its parent container. The "transform-origin" property is set to "left center" to control the origin of the circle's movement.
+  
+  - The ".circle" class styles each circle element. It's absolutely positioned and given a border-radius of 100% to create a circular shape. The "background" property sets the color and opacity of the circle.
+  
+  - The "@keyframes move" rule defines the animation sequence for the circles. In this example, the circles start at 0% opacity and move to the right. At 1%, their opacity increases, creating a gradual appearance. At 50%, they've moved to the right by 70px and their opacity reduces to 0.5. Finally, at 100%, they move to 140px to the right and their opacity becomes 0, creating a disappearing effect.
+  
+*/

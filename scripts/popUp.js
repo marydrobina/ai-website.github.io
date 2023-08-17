@@ -1,9 +1,15 @@
+/**
+ * Class representing a pop-up toggle functionality.
+ */
 class PopUp {
-  constructor() {
-    this.#togglePopUp();
-  }
+  constructor() {}
 
-  #togglePopUp() {
+  /**
+   * Toggles the pop-up, card description, and card image visibility.
+   * Updates the button text accordingly.
+   * @public
+   */
+  togglePopUp() {
     const $popUpBtn = $(".pop-up-btn");
 
     $popUpBtn.on("click", function () {
@@ -12,10 +18,12 @@ class PopUp {
       const $cardImage = $card.find(".card__img");
       const $popup = $card.find(".pop-up");
 
-      $popup.toggle(".hidden");
-      $cardDescription.toggle(".hidden");
-      $cardImage.toggle(".hidden");
+      // Toggle visibility of pop-up, card description, and card image
+      $popup.toggleClass("hidden");
+      $cardDescription.toggleClass("hidden");
+      $cardImage.toggleClass("hidden");
 
+      // Update button text based on state
       if (this.innerText == "Read more") {
         this.innerText = "Close";
       } else if (this.innerText == "Close") {
@@ -24,4 +32,3 @@ class PopUp {
     });
   }
 }
-const popUp = new PopUp();

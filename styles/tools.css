@@ -1,3 +1,6 @@
+/* Styling for the tools section */
+
+/* Body and main container */
 body {
   display: flex;
   flex-direction: column;
@@ -9,27 +12,38 @@ main {
   position: relative;
   z-index: 3;
 }
+
+/* Navigation */
 nav {
   position: relative;
 }
+
+/* Main navigation */
 #main-navigation {
   position: relative;
   align-self: start;
 }
+
+/* Heading for tools section */
 #tools-section h1 {
   text-align: center;
   animation: fadeInBottom 1s ease-in-out;
 }
 
+/* Tools wrapper */
 .tools-wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
   justify-content: center;
 }
+
+/* Animating the first three tools */
 .tools-wrapper:nth-child(-n + 3) {
   animation: fadeInBottom 1s ease-in-out;
 }
+
+/* Tool container */
 .tool {
   width: 350px;
   height: 500px;
@@ -39,6 +53,8 @@ nav {
   border-radius: 5px;
   padding: 1rem;
 }
+
+/* Tool image */
 .tool__image {
   width: 100%;
   height: 200px;
@@ -46,12 +62,16 @@ nav {
   overflow: hidden;
   margin-bottom: 1rem;
 }
+
+/* Tool image content */
 .tool__image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: all 0.2s ease-in-out;
 }
+
+/* Tool description */
 .tool__description {
   display: flex;
   flex-direction: column;
@@ -59,29 +79,38 @@ nav {
   height: 50%;
   gap: 1rem;
 }
+
+/* Styling for tool description headings */
 .tool__description h3,
 .tool__description h4 {
   color: var(--clr-accent-opacity-light);
 }
+
+/* Tags section */
 .tags {
   margin-top: 0.5rem;
   display: flex;
   gap: 10px;
 }
+
+/* Tag styling */
 .tags__tag {
   background-color: var(--clr-accent-opacity);
   padding: 0.3rem 1rem;
   font-size: var(--small-font-size);
   border-radius: 5px;
-
   transition: all 0.2s ease-in-out;
 }
+
+/* Hover effect for tools */
 .tool:hover {
   .tool__image img {
     transform: scale(110%);
   }
   cursor: pointer;
 }
+
+/* Hover effect for tags */
 .tags__tag:hover {
   background-color: var(--clr-accent-opacity-light);
 }

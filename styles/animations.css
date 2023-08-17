@@ -1,35 +1,45 @@
+/* Keyframes for fading in an element from the bottom */
 @keyframes fadeInBottom {
   from {
-    opacity: 0;
-    transform: translateY(100px);
+    opacity: 0; /* Starting with full transparency */
+    transform: translateY(
+      100px
+    ); /* Initially positioned 100px below its normal position */
   }
   to {
-    opacity: 1;
+    opacity: 1; /* Fully opaque when fully visible */
   }
 }
+
+/* Keyframes for fading in an image */
 @keyframes imageFadeIn {
   from {
-    opacity: 0%;
+    opacity: 0%; /* Completely transparent at the start */
   }
   to {
-    opacity: 100%;
+    opacity: 100%; /* Fully opaque when fully visible */
   }
 }
 
+/* Keyframes for fading in an element from the top */
 @keyframes fadeInTop {
   from {
-    opacity: 0;
-    transform: translateY(-100%);
+    opacity: 0; /* Starting with full transparency */
+    transform: translateY(
+      -100%
+    ); /* Initially positioned 100% above its normal position */
   }
   to {
-    opacity: 1;
+    opacity: 1; /* Fully opaque when fully visible */
   }
 }
-.toAnim {
-  opacity: 0;
-  transition: opacity 1s ease 0s;
-}
 
+/* Style for elements to be animated */
+.toAnim {
+  opacity: 0; /* Initially completely transparent */
+  transition: opacity 1s ease 0s; /* Smooth opacity transition over 1 second */
+}
+/* Animation triggered with 'anim' class */
 .toAnim.anim {
   opacity: 1;
   animation-name: fadeInBottom;
